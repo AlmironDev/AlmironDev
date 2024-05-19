@@ -3,6 +3,10 @@
 <span>
 <img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" alt="React Native logo" title="React Native" height="500" />
 </span>
+<div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+    <img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" alt="React Native logo" title="React Native" height="32px">
+    <h2 style="margin: 0;">Languages and Tools:</h2>
+</div>
 
 
 <p align="center">
@@ -91,6 +95,7 @@
 <br>
 
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 
 
@@ -102,7 +107,7 @@
 ![Adobe Illustrator](https://img.shields.io/badge/adobeillustrator-%23FF9A00.svg?style=for-the-badge&logo=adobeillustrator&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobephotoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)![Figma](https://img.shields.io/badge/figma-black.svg?style=for-the-badge&logo=figma&logoColor=red) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 
- <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com?lines=Computer+Science+Engineering+Student;Aspiring+Developer;Always+learning+new+things&center=true&width=500&height=50"></a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 <p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=SubhadeepZilong&theme=algolia" alt="SubhadeepZilong" /></p>
 
