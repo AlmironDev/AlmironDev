@@ -1,7 +1,7 @@
 
 
 <span>
-<img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" alt="React Native logo" title="React Native" height="25"/>
+<img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" alt="React Native logo" title="React Native" height="500" />
 </span>
 &nbsp;
 
@@ -127,8 +127,5 @@
   <img src="https://github.com/StefanosSt/StefanosSt/blob/main/github-user-contribution.svg" alt="snake">
 </p>
 
----
 
-[StefanosSt](https://github.com/StefanosSt)
-Last Edited on : 13/08/2023
 
