@@ -33,6 +33,7 @@ A **Software Engineering Student** 🚀 from Lahore, Pakistan.
 		<img src="https://readme-typing-svg.herokuapp.com/?lines=Shopify+Expert;Frontend+Developer;React%20|%20Gatsby%20|%20Next+Enthusiast;DL%20|%20AI%20|%20ML%20Applications;Always%20developing%20my%20skills&center=true&width=380&height=45">
 	</a>
 </p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px"> Connect with me
 
@@ -45,6 +46,7 @@ A **Software Engineering Student** 🚀 from Lahore, Pakistan.
 <a href="https://auth.geeksforgeeks.org/user/subhadeepchakraborty555" target="blank"><img align="center" src="https://raw.githubusercontent.com/AlmironDev/AlmironDev/main/icons/Social/geeks-for-geeks.svg" alt="subhadeepchakraborty555" height="30" width="40" /></a>
 <a href="https://leetcode.com/subhadeepchakraborty555/" target="blank"><img align="center" src="https://raw.githubusercontent.com/AlmironDev/AlmironDev/main/icons/Social/leet-code.svg" alt="subhadeepchakraborty555" height="30" width="40" /></a>
 </p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 ## 🚀💻 Technologies & Tools
 
@@ -69,6 +71,7 @@ A **Software Engineering Student** 🚀 from Lahore, Pakistan.
 &nbsp;
 <br>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 ## Frontend Development Technologies and Tools <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="32px"> 
 
@@ -82,6 +85,7 @@ A **Software Engineering Student** 🚀 from Lahore, Pakistan.
 <a href="https://www.hackerrank.com/subhadeepchakra3" target="blank"><img align="center" src="https://raw.githubusercontent.com/AlmironDev/AlmironDev/main/icons/FrontendDevelopment/html.svg" alt="subhadeepchakra3" height="30" width="40" /></a>
 <a href="https://auth.geeksforgeeks.org/user/subhadeepchakraborty555" target="blank"><img align="center" src="https://raw.githubusercontent.com/AlmironDev/AlmironDev/main/icons/FrontendDevelopment/babel.svg" alt="subhadeepchakraborty555" height="30" width="40" /></a>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 ## Backend Development + Database  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="32px">
 
