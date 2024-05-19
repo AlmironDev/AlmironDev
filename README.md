@@ -6,10 +6,7 @@
     </a>
 </p>
 
-<div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-    <img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" alt="React Native logo" title="React Native" height="32px">
-    <h2 style="margin: 0 0 0 10px;">Languages and Tools:</h2>
-</div>
+
 
 <p align="center">
 	<a href="https://github.com/Bouaskaoun">
