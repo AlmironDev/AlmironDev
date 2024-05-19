@@ -1,6 +1,6 @@
 
 <a target="_blank" align="center">
-  <img align="right" top="500" height="270" width="800" alt="GIF" src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif">
+  <img align="right" top="500" height="470" width="800" alt="GIF" src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif">
   
 </a>
 
