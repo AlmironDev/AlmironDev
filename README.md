@@ -1,10 +1,16 @@
 
 
 <p align="center">
-	<a href="https://github.com/Bouaskaoun">
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?duration=6500&color=777777&background=00000000&width=500&height=120&lines=++Hello!+I'm+Bill+Almiron+🌻)](https://git.io/typing-svg)
-	</a>
+    <a href="https://github.com/Bouaskaoun">
+        <img src="https://readme-typing-svg.herokuapp.com?duration=6500&color=777777&background=00000000&width=500&height=120&lines=++Hello!+I'm+Bill+Almiron+🌻" alt="Typing SVG">
+    </a>
 </p>
+
+<div style="display: flex; align-items: center; justify-content: center; width: 100%;">
+    <img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" alt="React Native logo" title="React Native" height="32px">
+    <h2 style="margin: 0 0 0 10px;">Languages and Tools:</h2>
+</div>
+
 <p align="center">
 	<a href="https://github.com/Bouaskaoun">
 		<img src="https://readme-typing-svg.herokuapp.com/?lines=Shopify+Expert;Frontend+Developer;React%20|%20Gatsby%20|%20Next+Enthusiast;DL%20|%20AI%20|%20ML%20Applications;Always%20developing%20my%20skills&center=true&width=380&height=45">
