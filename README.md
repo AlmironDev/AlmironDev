@@ -1,13 +1,8 @@
 <h1 align="center"> Hi there 👋, I'm Stefanos</h1>
 
-<span>
+<span >
 <img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" alt="React Native logo" title="React Native" height="500" />
 </span>
-<div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-    <img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" alt="React Native logo" title="React Native" height="32px">
-    <h2 style="margin: 0;">Languages and Tools:</h2>
-</div>
-
 
 <p align="center">
 	<a href="https://github.com/Bouaskaoun">
@@ -109,8 +104,6 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
-<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=SubhadeepZilong&theme=algolia" alt="SubhadeepZilong" /></p>
-
 
 
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px"> Connect with me
@@ -124,7 +117,6 @@
 <a href="https://leetcode.com/subhadeepchakraborty555/" target="blank"><img align="center" src="https://raw.githubusercontent.com/SubhadeepZilong/SubhadeepZilong/main/icons/Social/leet-code.svg" alt="subhadeepchakraborty555" height="30" width="40" /></a>
 </p>
 
-<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=SubhadeepZilong&theme=algolia" alt="SubhadeepZilong" /></p>
 
 
 
@@ -139,10 +131,8 @@
 
 
 
-<img src="https://github.com/AlmironDev/AlmironDev/blob/main/giphy.gif" />
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
 
 ## 🔥 Streak Stats
-<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=SubhadeepZilong&theme=algolia" alt="SubhadeepZilong" /></p>
-
 
