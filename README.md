@@ -66,7 +66,7 @@ Languages-Frameworks-Tools <img src="https://media2.giphy.com/media/QssGEmpkyEOh
 <div align="center">
   <h2>🐍 My Contributions 🐍</h2>
   <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/AlmironDev/AlmironDev/output/github-contribution-grid-snake.svg" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/AlmironDev/AlmironDev/output/github-contribution-grid-snake-dark.svg" />
 
 </div>
 <h2 align="center">⚡ Stats ⚡</h2>
