@@ -15,7 +15,7 @@ A **Software Engineering Student** 🚀 from Lahore, Pakistan.
 - 🤔 My interests are web automation, video processing and development of programming content for YouTube and Tik tok
 <!-- - 💼 I’m pursuing a Bachelor's degree in Computer Science. -->
 - 💬 Ask me about anything, I love to answer!
-- 📫 Email me at [almironbill@gmail.com](mailto:almironbill@gmail.com).
+- 📫 Email me at [almironbill@gmail.com](mailto:almironbill@gmail.com) || [bill.almiron@tecsup.edu.pe](mailto:bill.almiron@tecsup.edu.pe) . 
 - 📝 See my [Curriculum Vitae](https://drive.google.com/file/d/16-ksJqzTRizmd6WMRH3hJgTjHwcjJKV-/view?usp=sharing) to get more info.
 
 🙋‍♂️ Thank you for visiting my GitHub profile!
