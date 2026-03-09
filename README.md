@@ -60,18 +60,18 @@
 <h2 align="center">🗂️ Featured Projects</h2>
 <br/>
 <div align="center">
-  <a href="https://github.com/AlmironDev/Kerack">
-    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=Kerack&theme=react&border_radius=10" />
+  <a href="https://github.com/AlmironDev/Kiago_python">
+    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=Kiago_python&theme=react&border_radius=10" />
   </a>
-  <a href="https://github.com/AlmironDev/scraping_casas">
-    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=scraping_casas&theme=react&border_radius=10" />
+  <a href="https://github.com/AlmironDev/nestj_pruebas">
+    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=nestj_pruebas&theme=react&border_radius=10" />
   </a>
   <br/>
-  <a href="https://github.com/AlmironDev/Ecomerce_2025">
-    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=Ecomerce_2025&theme=react&border_radius=10" />
+  <a href="https://github.com/AlmironDev/roadmap-retos-programacion">
+    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=roadmap-retos-programacion&theme=react&border_radius=10" />
   </a>
-  <a href="https://github.com/AlmironDev/SupaBase_Type_React">
-    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=SupaBase_Type_React&theme=react&border_radius=10" />
+  <a href="https://github.com/AlmironDev/crude_node">
+    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=crude_node&theme=react&border_radius=10" />
   </a>
 </div>
 <br/>
