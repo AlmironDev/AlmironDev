@@ -60,19 +60,18 @@
 <h2 align="center">🗂️ Featured Projects</h2>
 <br/>
 <div align="center">
-  <!-- Replace REPO_NAME_1, REPO_NAME_2, etc. with your actual repository names -->
-  <a href="https://github.com/AlmironDev/REPO_NAME_1">
-    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=REPO_NAME_1&theme=react&border_radius=10" />
+  <a href="https://github.com/AlmironDev/Kerack">
+    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=Kerack&theme=react&border_radius=10" />
   </a>
-  <a href="https://github.com/AlmironDev/REPO_NAME_2">
-    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=REPO_NAME_2&theme=react&border_radius=10" />
+  <a href="https://github.com/AlmironDev/scraping_casas">
+    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=scraping_casas&theme=react&border_radius=10" />
   </a>
   <br/>
-  <a href="https://github.com/AlmironDev/REPO_NAME_3">
-    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=REPO_NAME_3&theme=react&border_radius=10" />
+  <a href="https://github.com/AlmironDev/Ecomerce_2025">
+    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=Ecomerce_2025&theme=react&border_radius=10" />
   </a>
-  <a href="https://github.com/AlmironDev/REPO_NAME_4">
-    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=REPO_NAME_4&theme=react&border_radius=10" />
+  <a href="https://github.com/AlmironDev/SupaBase_Type_React">
+    <img src="https://github-readme-stats-salesp07.vercel.app/api/pin/?username=AlmironDev&repo=SupaBase_Type_React&theme=react&border_radius=10" />
   </a>
 </div>
 <br/>
