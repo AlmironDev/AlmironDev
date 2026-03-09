@@ -43,25 +43,44 @@ A **Software Engineering Student** 🚀 from Arequipa, Peru.
   </a>
 </div>
 
-<h2 align="center">🚀 Languages-Frameworks-Tools 💻</h2>
+<h2 align="center">🎨 Frontend Development</h2>
 <br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=react,bootstrap,mui,html,css,vscode,github,figma,tailwind,git,r" />
-
+    <img src="https://skillicons.dev/icons?i=react,bootstrap,mui,html,css,tailwind,figma,nextjs" />
 </div>
 
-<h2 align="center">
+<br/>
 
-🔥
-Languages-Frameworks-Tools <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="32px">
-
-</h2>
-
+<h2 align="center">⚙️ Backend & Tools <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28px"></h2>
+<br/>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=nodejs,python,javascript,typescript,express,firebase,mongodb,c,java,nextjs,mysql,flask" />
-    
+    <img src="https://skillicons.dev/icons?i=nodejs,python,javascript,typescript,express,firebase,mongodb,java,mysql,flask,git,github,vscode" />
 </div>
 <br>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<h2 align="center">🗂️ Featured Projects</h2>
+<br/>
+<div align="center">
+  <!-- Replace REPO_NAME_1, REPO_NAME_2, etc. with your actual repository names -->
+  <a href="https://github.com/AlmironDev/REPO_NAME_1">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=AlmironDev&repo=REPO_NAME_1&theme=react&border_radius=10" />
+  </a>
+  <a href="https://github.com/AlmironDev/REPO_NAME_2">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=AlmironDev&repo=REPO_NAME_2&theme=react&border_radius=10" />
+  </a>
+  <br/>
+  <a href="https://github.com/AlmironDev/REPO_NAME_3">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=AlmironDev&repo=REPO_NAME_3&theme=react&border_radius=10" />
+  </a>
+  <a href="https://github.com/AlmironDev/REPO_NAME_4">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=AlmironDev&repo=REPO_NAME_4&theme=react&border_radius=10" />
+  </a>
+</div>
+<br>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 <div align="center">
   <h2>🐍 My Contributions 🐍</h2>
@@ -71,10 +90,9 @@ Languages-Frameworks-Tools <img src="https://media2.giphy.com/media/QssGEmpkyEOh
 </div>
 <h2 align="center">⚡ Stats ⚡</h2>
 <br>
-<div align=center>
+<div align="center">
   <img width=390 src="https://github-readme-streak-stats-salesp07.vercel.app/?user=AlmironDev&count_private=true&theme=react&border_radius=10" alt="streak stats"/>
   <img width=390 src="https://github-readme-stats-salesp07.vercel.app/api?username=AlmironDev&count_private=true&show_icons=true&theme=react&rank_icon=github&border_radius=10" alt="readme stats" />
-  <br/>
-  <img width=325 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlmironDev&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5" alt="top langs" />
-
+  <br/><br/>
+  <img width=325 src="https://github-readme-stats.vercel.app/api/top-langs/?username=AlmironDev&hide=HTML&langs_count=8&layout=compact&theme=react&border_radius=10&size_weight=0.5&count_weight=0.5" alt="top langs" />
 </div>
