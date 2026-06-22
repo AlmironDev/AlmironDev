@@ -1,5 +1,8 @@
 /* =====================================================================
-   TUS POEMAS  — selección (18 más extensos). Reordena/edita a gusto.
+   TUS POEMAS
+   ---------------------------------------------------------------------
+   Para agregar: copia un bloque { ... }. El texto va entre comillas
+   invertidas ` ` y respeta los saltos de línea tal cual los escribas.
    categoria válida: amor | tristeza | sentimiento | esperanza | desamor
    ===================================================================== */
 
@@ -17,108 +20,686 @@ const POEMAS = [
     titulo: "la oscuridad , tan inmenso y frio",
     categoria: "tristeza",
     fecha: "2020",
-    texto: "la oscuridad , tan inmenso y frio \nlos sentimientos se vuelven mas notorios y mas dolorosos\nsufriendo todo\nno quiero estaar solo pide mi corazon\npero mi razon , quiere que no dependa de los demas \ny es un problema , como tantos que tuve \npero este se repite y odio eso \nando  solo cominando , en el frio calle .... mirando las personas \n, las csas , las calles , el sol y su amanecer \nOh¡ es hermoso , me tranquiliza , es tan relajante ..\nla noche llega , todo se oscurece , las luces se van prendiendo \nlos niños del parque se estan iendo \nlos inter estan repletos y gritando\n\npasare a comprar pan , tal vez esta noche estee toda la familia\nhace tiempo que no los veo juntos\n\nhare la cena , tomaremos cafe , espero que les guste\n\nmi mirada anda perdida , mi ojos estan cansados mis piernas no sienten nada, ni el frio el tiempo no se detiene \nlos carros van y vienen ... \nQue triste mi vida ...\n\nentro a la panaderia , esta lleno\nse siente el rico olor del pan saliendo del horno\nEs hipnotiante .... vale la pena esperar\nmientras sigua saliendo ese aroma\nbueno sin darme cuenta es mi turno... pan integral como siempre\n\nregresando los emolientes salieron , esta vez no le comprare a mi casera , se me acabo la plata \ndebi traer mas\n\nllegando a mi casa , solo una luz esta prendida \nhabra venido mi padre ? \n\nAbro la puerta y solo esta mi primo ...\ncenare otra vez solo \nmi primo , se compra de la calle y siempre que le invito algo me rechaza\n\nentrando a mi cuarto , veo que no me gusta .. esta desordenado ...\nno quiero ver el celular ... tal vvez me llaman para tomar\ny no quiero cometer otro error esta semana\n\nvere que puedo hacer en este tiempo\n\nme falta hacer algunas tareas , terminare de hacerlas \n...\npasaron 3 horas , mi madre llega \n\nse va a su cuarto solo a domir  \n\ndentro de otras 2 horas llegua mi padre\ny se sale de nuevo",
+    texto: `
+la oscuridad , tan inmenso y frio
+los sentimientos se vuelven mas notorios y mas dolorosos
+sufriendo todo
+no quiero estaar solo pide mi corazon
+pero mi razon , quiere que no dependa de los demas
+y es un problema , como tantos que tuve
+pero este se repite y odio eso
+ando  solo cominando , en el frio calle .... mirando las personas
+, las csas , las calles , el sol y su amanecer
+Oh¡ es hermoso , me tranquiliza , es tan relajante ..
+la noche llega , todo se oscurece , las luces se van prendiendo
+los niños del parque se estan iendo
+los inter estan repletos y gritando
+
+pasare a comprar pan , tal vez esta noche estee toda la familia
+hace tiempo que no los veo juntos
+
+hare la cena , tomaremos cafe , espero que les guste
+
+mi mirada anda perdida , mi ojos estan cansados mis piernas no sienten nada, ni el frio el tiempo no se detiene
+los carros van y vienen ...
+Que triste mi vida ...
+
+entro a la panaderia , esta lleno
+se siente el rico olor del pan saliendo del horno
+Es hipnotiante .... vale la pena esperar
+mientras sigua saliendo ese aroma
+bueno sin darme cuenta es mi turno... pan integral como siempre
+
+regresando los emolientes salieron , esta vez no le comprare a mi casera , se me acabo la plata
+debi traer mas
+
+llegando a mi casa , solo una luz esta prendida
+habra venido mi padre ?
+
+Abro la puerta y solo esta mi primo ...
+cenare otra vez solo
+mi primo , se compra de la calle y siempre que le invito algo me rechaza
+
+entrando a mi cuarto , veo que no me gusta .. esta desordenado ...
+no quiero ver el celular ... tal vvez me llaman para tomar
+y no quiero cometer otro error esta semana
+
+vere que puedo hacer en este tiempo
+
+me falta hacer algunas tareas , terminare de hacerlas
+...
+pasaron 3 horas , mi madre llega
+
+se va a su cuarto solo a domir
+
+dentro de otras 2 horas llegua mi padre
+y se sale de nuevo",
   },
+
   {
-    titulo: "Buenas",
-    categoria: "tristeza",
-    fecha: "2023",
-    texto: "Buenas \n\nfue inoportuno que te escribiera y disculpa si te molesto\npero tengo cosas que necesito hacer y eso me collevo a alejarme de muchas amistades que tenia , uno de ellos carlos que es mi mejor amigo \n\nY tengo un poco miedo de que podria pasarme, en que persona me convertira ahora que tome todas estas decisiones en mi vida, por eso queria despedirme bien de ti, por que al menos quisiera saber que andes bien y cumplas tus metas\n\nY que si alguna vez nos encontramos por la calle hablarnos como si fueramos viejos amigos que no hablamos de tiempo\nPor que me doleria mucho ignorarte y hacer que nunca exististes , por que la verdad fuistes muy importante en mi vida  c,:\n\nMi plan era ir a ver libros y despues ir a un lugar donde te compre tu collar que te regale por primera vez , ya que lo perdistes por accidente, ya que solo esos vendedores solo estan como 3 dias al año en arequipa y al menos quisiera darte el gusto de escoger el mismo collar pero ya si querias cambiar de color a otro tendras esa opcion\n\nY darte ese regalo de despedida\nya que tenia todo un plan ,\npero como nose pudo \nCuando te dije para 1 hora , al menos ya ir que escogieras el collar y despedirme\n\npero ahora\n\n\nla verdad nose si culparme por todo lo que estas pasando\ntal vez si hubieramos seguido no estarias pasandola mal\no tal vez podria haber pasado otras cosa y creo que me siguo destruyendo , por pensar y sobrepensar mucho las cosas\nde lo que hubiera pasado si hubiera tomado otra eleccion\nNose que hacer ahora, tal vez estes mejor sin mi y por gusto son mis pensamientos o tal vez me equivoco ...\nPor que aunque hayas tomado malas decisiones, nose por que no me buscastes por ayuda \nTal vez por que no querias verme o no saber de mi , nose\ny se me ocurren mil ideas en mi cabeza y no tengo respuesta y me duele no saber\n\nNose tengo muchos pensamientos y nose como detenerlo\n\nYa esto no se esta volviendo como despedida \n\nuna parte de mi quiere solo despedirse y ya\n\npero otra quiere ayudarte por que\n\ncuando estaba solo en mis momentos que estaba mal nadie me ayudo y no quiero que cuando estes mal estes sola \n\nPero nose si es correcto hacerlo o no \n\nTal vez no me necesites, no lose la verdad \n\nSolo quiero que estes bien ya :,)",
-  },
-  {
-    titulo: "Parte 2",
-    categoria: "tristeza",
-    fecha: "2023",
-    texto: "Siempre estas lidiando con toda the fucking life\n\n\nMe sorprende tu valentia, por que a pesar de tantas cosas que han pasado en tu vida, te mantienes arriba\n\nMe encanta tu firmeza, por que has pasado tanto luchando que mereces caminar con la frente en alto \n\nMe gusta tu sonrisa por que lleva impresa tus batallas y tu historia, por que es la señal de la victoria\n\n#Victoria- Kelbin torres\n\n\n\nPosiblemente yo no sea el motivo de tu sonrisa, pero estoy enamorado de ella, que me da temor que se desvanezca \n\nSiento una angustia en mi pecho , por que a vezes me siento insatisfecho de mi,que usted este alla y yo no\n\n\nNo busco recompensa ni alegria solo trato de intentarlo y arriesgarme sin mucha palabrería \n\nNo soy una persona bendecida de la vida\n\nMi alegria estaba callada, tu expresión me trajo la paz a mi alma, mis sentimientos sacudieron mi cuerpo y mi felicidad fue encontrada\n\n\n\nEl mundo lleva mas de 2000 años de haber sido creado \n\nPero tu creastes mi mundo con solo una sonrisa\n\nTu eres mi escape de la realidad \nEse lugar donde no buscaba nada y lo encontré todo\n\nMe siento apasiguado con el solo hecho de oir tu voz\n\nDe sentir los zumbidos de tu corazon\n\nEl de solo ver de como se arruga tu piel, para mostrarme esa sonrisa \n\n\nSinceramente tal vez sea hipócrita pero solo yo quiero ver tu sonrisa \n\n\nRaioz me haces muy feliz\n\n:\")",
-  },
-  {
-    titulo: "8 años",
-    categoria: "tristeza",
-    fecha: "2023",
-    texto: "Tenia miedo ya que en cualquier momento se pudiera ir todo en un error el error en un problema y el problema acabaria con todo\n\nElla ya empezo a odiarlo desde el primer dia, la explotación de un contrato fue peor de lo que pensaba , tener esa obligación de fingir estar bien y percatarte que te estas perdiendo\n\nTrataba de lidiar con el contrato y su vida antes de esta.\n\nAl menos sabia cuanto duraria su sufrimiento, pero la ansiedad le consuma por el largo camino que le falta recorrer\n\n\n\nParecia una pesadilla, vivirlo tam profundo que  la soledad empezaba a consumirla\n\n\nEl cuerpo aguanta hasta donde el alma quiera, pero las heridas no se pueden ignorar\n\n\nTodavia nose como sonrie, como puede mantener una sonrisa \n\nDespues de tanta bazofia\n\n\n\nPues a quien puedes culparles, a tus padres? A tu hermanos ? A tus amigos? A la mala suerte ?A tu Pais ? A tu vida ? \n\n\nOh mia\n\n\n\n\n\n\nQue mas quieren de mi ?\n\nSer alguien que sigua sus ordenes ?\n\nQue cumpla sus exigencias?\n\nQue sea no sea feliz ?\n\nQue no pueda sonreir si ellos no quieren ?\n\n\nOh raioz piensan que estoy bien y solo es mi berrinche de un adolescente \n\nAndo mas roto pero estan preocupados por ustedes que ni se fijan que su hijo ya de quedo suicidar mas de 7 vezes\n\n\n\n\n\nSemana 1 tenía presión en diferentes",
-  },
-  {
-    titulo: "I. (Piano lúgubre, voz temblorosa)",
-    categoria: "tristeza",
-    fecha: "2025",
-    texto: "I. (Piano lúgubre, voz temblorosa)\nEl ocaso ha llegado...\n(pausa, respiración entrecortada)\nMi refugio no es ceniza...\nes el humo que me ahoga\ncuando busco tu rostro en la nada.\n\nMis latidos... (voz quebrada)\nya no encuentran\nesa canción que construistes\n\n\nII. (Cuerdas tensas, voz que se agrieta)\nEl alma no se quiebra...\nse hace añicos cuando callas.\nTu silencio no es vacío...\n¡es un cuchillo en mi espalda!\n¡es un grito... sin palabra!\n\n¿Ves esta agonía? (grito ahogado)\nNo es mía...\n¡Es la tuya que me habita!\n\nIII. (Estribillo desgarrado)\n¡ESCÚCHAME! (gritado, luego susurro roto)\nAunque solo sea esta vez...\nAunque tu eco solo sea el viento\nllevándose pedazos de mí.\n\nAtiende mis suplicas \nDirigueme con tu mirada\nno me desprecies \n\n¡Alto! ¡Espera!\n\nNo me mires con esos sojos \n\nEsos ojos... (voz que se rompe)\n—tan fríos como el mármol—\ntan secos y vacios\n tan pálidos... \ntan oscuro \nya tiene ese brillo\n\nNo me mires así... (susurro tembloroso)\nNo me obligues a entender\nque ya no te reconozco\n\nDime que bajarás de ese pedestal.\n\nNo saltes.\nNo desaparezcas.\nNo te alejes \n\nSolo baja…\nsolo quédate,\naunque duela.\n\n\n\nSiéntate aquí...\nEn esta oscuridad que compartimos.\nDime cualquier mentira...\npero (pausa dramática)\nno me digas\nque es tarde.\n\n¡BAJA! (orden, luego súplica)\nQue esta no es tu cruz sola...\nSomos los que apostamos\nhasta por tus fantasmas.\n\nSomos el mapa\nque dibujaste en nuestras almas.\n\nNo dejes que acabe esta historia \n\nNo te lleves tu penuria sola\n\n—no, por favor—\nno termines \nel último verso\nde nuestra historia.",
-  },
-  {
-    titulo: "Era paz como ninguna , ya no me ahogaba como de …",
-    categoria: "tristeza",
-    fecha: "2025",
-    texto: "Era paz como ninguna , ya no me ahogaba como de costumbre , me sentia libre como nunca , las palabras fluian , era calido era natural , era estar soñando \n\nPero a vezes las cosas suceden de la nada , un problema lleva a otro el terror el miedo vuelven , pero lo peor de todo esque no pude evitarlo\n\nNo pude evitar que la felicidad se rompiera , \n\ntal vez tenga la culpa de mia , no tengo la suficiente autestima de quererme , todavia no me quiero\ntodavia no soy suficiente me culpo mucho , me siguo cayendo \ntodavia no salgo de este abismo\n\nmi cuerpo tiembla , mi garganta se vuelve dura , mis pies estan queriendo caerse otra vez\n\nno puedo seguir me siento muy vacio no tengo nada ni nadie\n\nme siento muy solo que ahora \n\nesta sensacion ya la conozco pero nose que hacer siguo en el mismo abismo una y otra vez\n\nel infierno vuelve a mi mundo parece que nada cambia ando desenfocado\n\nme siguo mintiendo a mi mismo\n\naunque se que debo hacer no lo hago mi cuerpo no responde \n\ntal vez por que lo intento y siempre caigo \nque lo que hace diferente a las otras ocasiones\nque es lo que me hace a mi diferente\n\nque es lo que puedo hacer para cambiar todo esto\n\nsiguo estando solo siguo sintiendome solo\n\nmuy pero muy solo todo esta mrd , me esta consumiendo como una mrd",
-  },
-  {
-    titulo: "Baja te lo suplico",
-    categoria: "tristeza",
-    fecha: "2025",
-    texto: "\" Sucidio , \n\nSoy un ma\n\nEscucha mi voz,\naunque ya no me escuches.\nEntiende lo que grito en silencio,\nlo que suplico mientras callas.\n\nMe duele verte así.\nAlgunos te amamos...\nde verdad te amamos,\naunque ya no lo veas.\n\nEstás perdido,\nciego en tu propio abismo.\nRecuerda quién fuiste.\nDime algo, lo que sea.\nRespóndeme.\n\nDime que esto es solo un sueño\nSiéntate conmigo en la sombra,\nháblame...\naunque sea la última vez, háblame.\n\nPero baja.\nSolo baja.\n\nUn paso más\ny no habrá regreso.\nUn paso más,\ny mi corazón caerá contigo.\n\nAlto , espera ... \n\nNo me mires con esos ojos vacíos,\ntan secos, tan pálidos...\nNo me mires,\nporque me quiebras.\nNo me mires...\nesa mirada me duele,\nme arde en el pecho.\nNo me dejes.\n\nDime que bajarás de ese pedestal.\n\nNo saltes.\nNo desaparezcas.\nNo te alejes \n\nSolo baja…\nsolo quédate,\naunque duela.\n\nNo lo hagas.\n\nNo seas egoísta,\nporque no es solo tu pelea.\n\nNo solo eres tú...\n\nsomos nosotros\n\ntodos lo que te amamos",
-  },
-  {
-    titulo: "Madrugada sin bulla",
-    categoria: "tristeza",
-    fecha: "2026",
-    texto: "Madrugada sin bulla\nJoder, me siento triste a la 1 de la mañana\naunque la haya pasado bien con los míos —\nmi cama sigue sola,\nsin nadie a quien contarle\ntodo lo que viví,\ntodo lo que compartí,\nque mierda es esto.\nDímelo tú, joder.\nEstoy en la pinche madrugada\nrogando atención,\nmendigando una voz que me diga\nque todo lo que hago está bien.\nPero mi corazón está mierda.\nPorque no entiende lo que es la felicidad,\nno entiende que haberlo pasado bien\nno resuelve la mierda que carga —\neste pecho insulso,\nvacío,\npropósito hueco de mi propio ser.\nNo puedo dormir sin bulla.\nNo puedo conciliar el sueño\nporque cuando llega el silencio\nmis demonios se hunden más adentro\ny me siento inmundo\nentre tantos mundos dentro de mi cabeza —\nestoy corrompido.\nJoder, dime por qué no puedo dormir sin bulla.\nDime por qué mi cabeza no para,\npor qué no puede decirse a sí misma: basta.\nEsto me está jodiendo.\n¿Desde cuándo pensar y pensar\nse volvió mi pesadilla?\n¿Desde cuándo no puedo descansar?\nMe construí de distracciones\ncomo quien levanta muros con papel —\nsabiendo que la lluvia viene,\nsabiendo que el papel no aguanta,\nhaciéndolo igual.\nPorque es más fácil\nllenarse de gente\nque enfrentarse al eco\nde una habitación que te conoce demasiado.\nSoy experto en estar\nsin estar del todo —\npresente en las fotos,\nausente en el pecho,\nsonriendo con la boca\nmientras algo más antiguo\nse arrastra por mis costillas.\nY cuando todos se van\ny el mundo cierra sus ruidos\nme quedo yo\ncon este yo que no invité,\neste que no descansa,\neste que pregunta sin parar\nsi lo que soy\nes suficiente para algo.\nLa madrugada tiene dientes.\nMuerde despacio,\nsin sangre visible,\njusto donde más duele —\nen ese lugar sin nombre\nentre el pecho y el alma\ndonde guardo lo que no digo.\nCierro los ojos\ny mi cabeza enciende sus motores,\npiloto automático del caos,\nsinfonía de todo lo que pospuse sentir.\nArqueólogo de mis propias ruinas,\nexcavo a la 1 de la mañana\nlo que el día no quiso mostrarme.\nFui feliz hoy — lo juro —\nlo fui entre risas prestadas,\nentre abrazos que no pedí\ny conversaciones que se evaporaron\nantes de llegar al hueso.\nPero la noche no miente.\nLa noche lo sabe todo.\nY me devuelve entero\na este colchón testigo\nde todo lo que callo.\n¿Qué clase de fractura es esta\nque no duele al tocarla\npero sangra cuando hay silencio?\nMis demonios no gritan —\neso sería más fácil —\nsusurran,\npacientes,\ncomo quien conoce el camino de memoria.\nY yo les abro la puerta\nporque al menos ellos vienen.\nAl menos ellos se quedan.\nMadrugada cómplice,\ntecho que me mira sin respuesta,\n¿cuántas noches más\nvoy a necesitar el ruido\npara no escucharme?\n¿Cuándo aprendí a temerle al silencio?\n¿Cuándo se volvió el descanso\nmi enemigo más íntimo?\nJoder.\nNi siquiera recuerdo\ncómo se duerme sin miedo.",
+`,
   },
   {
     titulo: "No saltes por favor",
     categoria: "tristeza",
     fecha: "2026",
-    texto: "10 años de  amistad\n\n\n[Prólogo — voz temblorosa, casi rota]\nYo también temblé esa noche\n con las manos sin saber a dónde ir,\n buscándote en cada silencio,\n rezando sin saber a quién.\n\nI. (Música suave, voz contenida)\nEl ocaso ha llegado...\n\n Mi refugio no es ceniza,\n es humo que me ahoga\n cuando busco tu rostro\n en la nada.\n\nMis latidos... (voz quebrada)\n ya no encuentran el camino\n de vuelta a ningún lado.\n\nHay caos en mi interior,\n mis pensamientos estallan\n contra mis acciones.\n No puedo razonar...\n es más,\n no quiero.\n\nII. (Cuerdas tensas, voz que se agrieta)\nEl alma no se quiebra...\n se hace polvo cuando callas.\n Tu silencio no es vacío,\n ¡es una daga en la espalda!,\n ¡un grito sin palabras!\n¿Ves esta agonía? (grito ahogado)\n No es mía...\n ¡es la tuya que me habita!\n\nIII. (Estribillo desgarrado)\n¡ESCÚCHAME! (gritado, luego susurro roto)\n Aunque solo sea esta vez...\n aunque tu eco sea solo viento\n que no regresa.\nAtiéndeme.\n Atiéndeme a mí, que te suplico,\n guíame con la mirada,\n no me des la espalda,\n no me ignores,\n no me atormentes con tu silencio.\n¡Alto!\n ¡Qué haces!\n ¡Espera!\n\nNo me mires con esos ojos...\n Esos ojos... (voz que se quiebra)\n tan fríos y secos como el mármol,\n tan pálidos que niegan\n hasta el color del sol...\n tan quietos que el tiempo olvida,\n tan fríos que queman más que el fuego.\nNo me mires así... (susurro tembloroso)\n No me obligues a entender\n que ya no te reconozco.\n\nIV. (Puente dramático)\nDime... dime que bajarás de ese pedestal.\n Dime que aún puedo alcanzarte,\n aunque sea con las manos rotas.\n Dime cualquier mentira...\n pero (pausa dramática)\n no me digas\n que es tarde.\nNo saltes.\n No desaparezcas.\n No te vayas...\nSolo baja…\n solo quédate,\n aunque duela.\n¡BAJA! (orden, luego súplica)\n Que esta no es solo tu cruz.\n Somos los que apostamos\n hasta por tus demonios.\n Somos el mapa\n que trazamos entre los dos.\n\nV. (Voz que recupera fuerza, luego se quiebra)\nDiez años.\n Diez años que no caben\n en una sola caída.\nLos mismos que ahora pesan\n en estas manos vacías\n que no saben cómo alcanzarte,\n que no saben cómo detenerte,\n que solo saben\n que te necesitan.\nDiez años no se entierran en silencio.\n Diez años no desaparecen con el viento.\n Diez años gritando tu nombre\n en cada carcajada compartida,\n en cada broma que lancé\n sabiendo que ibas a aguantarla.\nDiez años me deben\n al menos tu voz,\n aunque sea rota,\n aunque sea un susurro,\n diciéndome que sigues.\nQue sigues aquí.\n \nVI. (Final — susurro que se convierte en promesa)\nNo dejes que acabe la historia,\n no te lleves contigo tu penuria en silencio.\nNo termines\n el último verso\n de nuestra historia.\n(pausa larga)\nAquí estaré.\n Como siempre, molestándote.\n Pero con los ojos abiertos esta vez.\nContigo.\n Siempre contigo.",
+    texto: `
+10 años de  amistad
+
+[Prólogo — voz temblorosa, casi rota]
+Yo también temblé esa noche
+ con las manos sin saber a dónde ir,
+ buscándote en cada silencio,
+ rezando sin saber a quién.
+
+I. (Música suave, voz contenida)
+El ocaso ha llegado...
+
+ Mi refugio no es ceniza,
+ es humo que me ahoga
+ cuando busco tu rostro
+ en la nada.
+
+Mis latidos... (voz quebrada)
+ ya no encuentran el camino
+ de vuelta a ningún lado.
+
+Hay caos en mi interior,
+ mis pensamientos estallan
+ contra mis acciones.
+ No puedo razonar...
+ es más,
+ no quiero.
+
+II. (Cuerdas tensas, voz que se agrieta)
+El alma no se quiebra...
+ se hace polvo cuando callas.
+ Tu silencio no es vacío,
+ ¡es una daga en la espalda!,
+ ¡un grito sin palabras!
+¿Ves esta agonía? (grito ahogado)
+ No es mía...
+ ¡es la tuya que me habita!
+
+III. (Estribillo desgarrado)
+¡ESCÚCHAME! (gritado, luego susurro roto)
+ Aunque solo sea esta vez...
+ aunque tu eco sea solo viento
+ que no regresa.
+Atiéndeme.
+ Atiéndeme a mí, que te suplico,
+ guíame con la mirada,
+ no me des la espalda,
+ no me ignores,
+ no me atormentes con tu silencio.
+¡Alto!
+ ¡Qué haces!
+ ¡Espera!
+
+No me mires con esos ojos...
+ Esos ojos... (voz que se quiebra)
+ tan fríos y secos como el mármol,
+ tan pálidos que niegan
+ hasta el color del sol...
+ tan quietos que el tiempo olvida,
+ tan fríos que queman más que el fuego.
+No me mires así... (susurro tembloroso)
+ No me obligues a entender
+ que ya no te reconozco.
+
+IV. (Puente dramático)
+Dime... dime que bajarás de ese pedestal.
+ Dime que aún puedo alcanzarte,
+ aunque sea con las manos rotas.
+ Dime cualquier mentira...
+ pero (pausa dramática)
+ no me digas
+ que es tarde.
+No saltes.
+ No desaparezcas.
+ No te vayas...
+Solo baja…
+ solo quédate,
+ aunque duela.
+¡BAJA! (orden, luego súplica)
+ Que esta no es solo tu cruz.
+ Somos los que apostamos
+ hasta por tus demonios.
+ Somos el mapa
+ que trazamos entre los dos.
+
+V. (Voz que recupera fuerza, luego se quiebra)
+Diez años.
+ Diez años que no caben
+ en una sola caída.
+Los mismos que ahora pesan
+ en estas manos vacías
+ que no saben cómo alcanzarte,
+ que no saben cómo detenerte,
+ que solo saben
+ que te necesitan.
+Diez años no se entierran en silencio.
+ Diez años no desaparecen con el viento.
+ Diez años gritando tu nombre
+ en cada carcajada compartida,
+ en cada broma que lancé
+ sabiendo que ibas a aguantarla.
+Diez años me deben
+ al menos tu voz,
+ aunque sea rota,
+ aunque sea un susurro,
+ diciéndome que sigues.
+Que sigues aquí.
+
+VI. (Final — susurro que se convierte en promesa)
+No dejes que acabe la historia,
+ no te lleves contigo tu penuria en silencio.
+No termines
+ el último verso
+ de nuestra historia.
+(pausa larga)
+Aquí estaré.
+ Como siempre, molestándote.
+ Pero con los ojos abiertos esta vez.
+Contigo.
+ Siempre contigo.",
+  },
+
+  {
+`,
   },
   {
-    titulo: "ultima Carlos dead",
-    categoria: "tristeza",
-    fecha: "2026",
-    texto: "Nuestra vida parece una piedra\naunque muchas cosas podemos soportar y superarla\ncuando nos dan en el punto preciso \n\nno sabes como llegamos ahi , solo pasaron las cosas \ny al final solo\n\nsolo nos destruimos\n\n\n\n\nNO SALTES POR FAVOR\n\nEl ocaso ha llegado...\nMi refugio no es ceniza...\nes humo que me ahoga\ncuando busco tu rostro\nen la nada.\n\n\nMis latidos... (voz quebrada)\nya no encuentran\nesa canción que construistes\n\n\nII. (Cuerdas tensas, voz que se agrieta)\nEl alma no se quiebra...\nse hace polvo cuando callas.\nTu silencio no es vacío,\n¡es un daga en la espalda!,\n¡un grito sin palabra!\n\n¿Ves esta agonía? (grito ahogado)\nNo es mía...\n¡es la tuya que me habita!\n\nIII. (Estribillo desgarrado)\n¡ESCÚCHAME! (gritado, luego susurro roto)\nAunque solo sea esta vez...\naunque tu eco , sea el viento\nllevándose trozos de mí.\n\nAtiéndeme a mi suplica\nguíame con la mirada,\nno me des la espalda.\n\nno me ignores ,\nno me atormentes  con tu silencio\n\n¡Alto!\n¡Que haces!\n\n ¡Espera!\n\nNo me mires con esos ojos...\n\nEsos ojos... (voz que se quiebra)\ntan fríos y secos como el mármol\ntan pálidos que niegan\nhasta el color del sol...\n\ntan quietos que el tiempo olvida\ntan fríos que queman más que el fuego.\nNo me mires así... (susurro tembloroso)\nNo me obligues a entender\nque ya no te reconozco.\n\nIV. (Puente dramático)\nDime..... dime que bajarás de ese pedestal.\nDime que aún puedo alcanzarte,\naunque sea con las manos rotas.\nDime cualquier mentira...\npero (pausa dramática)\nno me digas\nque es tarde.\nNo saltes.\nNo desaparezcas.\nNo te vayas...\n\nSolo baja…\nsolo quédate,\naunque duela \n\n¡BAJA! (orden, luego súplica)\nQue esta no es solo tu cruz .\nSomos los que apostamos, \nhasta por tus demonios.\n\nSomos el mapa\nque dibujaste en nuestras almas.\n\nNo dejes que acabe la historia,\nno te lleves contigo tu penuria en silencio.\n\nno, por favor\nno termines...\nel último verso\nde vuestra historia .",
-  },
-  {
-    titulo: "Llego a casa de una dia cansado , risas y divers…",
-    categoria: "esperanza",
-    fecha: "2021",
-    texto: "Llego a casa de una dia cansado , risas y diversion \n \nUna cama sin vida , esperando mi llegada .. \nmi gato durmiendo \n\nOdio esas nochesss... \nOdio que pase el tiempo... ya que te extraño cada vez mas \n\nEstoy delirando de tristeza , cuando te recuerdo\nMe duele el alma , mis ojos se empapan y\nMi garganta se agranda \n\nTodavia te siento a mi lado en las noches\nCuando el insonmio me atormenta y la soledad me acompaña\nY mi alegria se a ocultado \nTodavia recuerdo el amor\n\nAmor que te tengo \nAmo esa mirada determinada ,  de tu  valentia de enfrentar la vida, ante los prejuicios de las personas \nAmo tus expreciones perfectas e imperfectas \n\nTe recuerdo y te siento conmigo como si nunca te hubieras ido\n\nSinn darme cuenta amanece .... me toco el  pecho y pienso en ti \nTe extraño\n\nA vezes pienso en botar la toalla , pero lo pienso mucho \nY sale la respuesta que me da la energia de salir \n\nNose que me depare el futuro es muy incierto \n\nEmpieza a salir el sol ... Oh! es hermoso\n\nMi pulmones se llenan de la calida mañana \nMi sonrisa aparece \nMi gato ya me despeino y me pide la comida\n\n\n \nTengo que alistarme.... \n¿Por que?.....\nPor que\nNinguna cosa se hara si solo son palabras\n\nY tengo que maltratar a mis compañeros",
-  },
-  {
-    titulo: "Llego a casa de una dia cansado , risas y divers…",
-    categoria: "esperanza",
-    fecha: "2021",
-    texto: "Llego a casa de una dia cansado , risas y diversion \n \nUna cama sin vida , esperando mi llegada .. \nmi gato durmiendo \n\nEstoy delirando de tristesa , cuando te recuerdo\nMe duele el alma , mis ojos se empapan y\nMi garganta se agranda \nAmor que te tengo \nAmo esa mirada determinada ,  de tu  valentia de enfrentar la vida, ante los prefuicios de las personas \nAmo tus expreciones perfectas e imperfectas , besos y abrazos\n\nTodavia te siento a mi lado en las noches\nCuando el insonmio me atormenta y la soledad me acompaña\nY mi alegria se a ocultado \n\nOdio esas nochesss... \nOdio que pase el tiempo... ya que te extraño cada vez mas \n\nSinn darme cuenta amanece .... me toco el  pecho y pienso en ti \nTe extraño\n\nMis manos saben la rutina de cada mañana\n\nEmpieza a salir el sol ... Oh es hermoso\n\nTe recuerdo y te siento conmigo como si nunca te hubieras ido\n\nSiguo en pie ...  Sii .. siguo en pie\nTodavia no\nTodavia no \nTodavia quiero que me veas cumplir mi meta\nMi pulmones se llenan de la calida mañana \nMi sonrisa aparece \nMi gato ya me despeino y me pide la comida",
-  },
-  {
-    titulo: "la empresa de cartas",
-    categoria: "esperanza",
-    fecha: "2021",
-    texto: "Un niño marginado, era repudiado y no muy querido.... Le faltaba talento y tenía muchos defectos\nAmaba a su madre sobre todas las cosas.... Era su inspiración para seguir\nEra grandiosa\n\nNo era pobre ni tan rico\nNo faltaba pan en la mesa pero a vezes se olvidaba de comprar \n\nSu madre no era bella ni muy inteligente \nPero era muy alegre, hacía amigos muy rápidamente y a vezes paraba estresada por el trabajo y le atormentaba mucho al ver a sus compañeros de promoción alegres y felices con buenos trabajos y con una vida estable \n\nConsiguió un trabajo para la municipalidad por un amigo\nEra su primer año y no estaba en planilla \nTenía que organizar su horario para que tenga tiempo en el mercado y la cocina \n\nSiempre andaba con una sonrisa, le encanta a tejer chompás y arreglar camisas \n\nNo le gustaba la suciedad y que la casa esté de cabeza\n\nNo le gustaba los conflictos ni menos las peleas \nNo le gustaba hacer daño a alguien por que no era lo correcto \n\nNo era perfecta\nPero era maravillosa",
-  },
-  {
-    titulo: "newwwwwwwwwwwwwww",
+    titulo: "El temor se aproxima",
     categoria: "esperanza",
     fecha: "2025",
-    texto: "El temor se aproxima, el enemigo acecha.\nNo hay tregua, no hay rendición.\nLa sangre vibra, y el momento se acerca.\n\nLa morfina no calma mi tormento, sigo esclavo del afecto.\nNo buscaré el momento, rezaré a la fortuna, me declararé adepto.\nAtento estaré en el campo de batalla, cuando la sangre cese\ny la última bala se libere.\n\nEntonces, te miraré de frente.\nMi mirada será temerosa,\npero mi corazón, firme, estable.\n\nPor un instante, tu recuerdo arderá en mi mente.\nAñoraré el pasado,\npero ya no serás mi serotonina ni dopamina.\n\nEl sueño me ha corrompido en un destello,\ny detendré este viaje con ketamina.\n\nEscribiré de nuevo, una y otra vez,\nmientras estas llamas de ansiedad se consumen.\n\nLlegará el momento,\ncuando la sintonía del arte y la expresión sean contagiosas,\ncuando el miedo retroceda siquiera un 1%.\nAhí, en ese instante que he forjado,\ngritaré: \"¡Hazlo!\"\n\nTómame de nuevo, esta vez con más fuerza,\ncon más coraje, porque estoy listo.\nListo para destruirme y comenzar desde cero.",
+    texto: `
+El temor se aproxima, el enemigo acecha.
+No hay tregua, no hay rendición.
+La sangre vibra, y el momento se acerca.
+
+La morfina no calma mi tormento, sigo esclavo del afecto.
+No buscaré el momento, rezaré a la fortuna, me declararé adepto.
+Atento estaré en el campo de batalla, cuando la sangre cese
+y la última bala se libere.
+
+Entonces, te miraré de frente.
+Mi mirada será temerosa,
+pero mi corazón, firme, estable.
+
+Por un instante, tu recuerdo arderá en mi mente.
+Añoraré el pasado,
+pero ya no serás mi serotonina ni dopamina.
+
+El sueño me ha corrompido en un destello,
+y detendré este viaje con ketamina.
+
+Escribiré de nuevo, una y otra vez,
+mientras estas llamas de ansiedad se consumen.
+
+Llegará el momento,
+cuando la sintonía del arte y la expresión sean contagiosas,
+cuando el miedo retroceda siquiera un 1%.
+Ahí, en ese instante que he forjado,
+gritaré: "¡Hazlo!"
+
+Tómame de nuevo, esta vez con más fuerza,
+con más coraje, porque estoy listo.
+Listo para destruirme y comenzar desde cero.",
   },
+
   {
-    titulo: "¿Qué significa ser un verdadero hombre?",
-    categoria: "esperanza",
-    fecha: "2026",
-    texto: "¿Qué significa ser un verdadero hombre?\n\n\nDicen que biológicamente\n es cromosoma XY,\n hormonas,\n anatomía.\n Una definición limpia.\n Fría.\n Sin cicatrices.\nDicen que socialmente\n es proveedor, protector,\n el que sostiene,\n el que no se dobla.\n Hoy evolucionamos, dicen.\n Hoy validamos la empatía,\n la inteligencia emocional,\n la corresponsabilidad.\nPalabras grandes.\n Palabras bonitas.\nY en psicología\n dicen que es construcción propia,\n identidad,\n valores,\n propósito de vida.\n\nSigo sin respuesta.\nY los años pasan.\nY la pregunta se queda\nclavada aquí,\nen este pecho\nque nadie enseñó a abrir.\n\nCumples dieciocho y ya te llaman hombre. Pero el espejo no entrega lo que el alma no ha ganado.\nY nadie te avisa\nque el nombre no alcanza,\nque la edad no basta,\nque el título llega vacío\ncuando nadie te enseñó\na llenarlo.\n\nBusco en mi interior y recuerdo las palabras de papa\n\n\" Eres un hombre carajo , deja de llorar o el siguiente golpe sera peor \"\n\nEres un hombre. Y los hombres no lloran.\n\nNadie te dice que hay noches , en que te quedas mirando el techo , buscando soluciones que no llegan y la tristeza se disfraza de cansancio porque un hombre no se queja.\n\nQue hay conversaciones que nunca tuviste porque alguien te enseñó que el golpe enseña mejor con una cara ensangretada y un par de moretones en el cuerpo.\n\nY así crecemos........ aprendiendo a sobrevivir antes de aprender a vivir. \nAprendiendo a callar antes de aprender a decir.\n\nYo lo aprendí a las malas , a sentir el metal de mi sangre en los labios. Y lo pagué con creces , por que en mi cabeza ya se tatua la frase el sentir dolor y sufrimiento no es de hombre.\n\nLa cagué tantas veces que ya no sé si camino hacia ese hombre verdadero o si me alejo de él con cada paso que doy.\n\n\n\nNo tengo un padre del que sentirme orgulloso. Cuántas veces lo quise muerto, y cuántas vezes entendí que no tenía sentido — reclamarle a alguien que no entiende lo que siente pecho , lo que me hierve la sangre al ver ese rostro efimero y seco.\n\nLo vi levantar la voz donde debía haber palabras. \nLo vi irse donde debía quedarse. \nLo vi elegirse a él, siempre a él, mientras todo lo demás se caía.\n\nY yo — sin querer — aprendí el mismo idioma. \nLa misma huida. \nEl mismo frío.\n\nNo fui buena pareja. \nNo pude sostener lo que más importaba. \nElla sollosaba de tristeza y yo me quedaba quieto — sin moverme, sin salvarla, sin saber cómo cruzar esa distancia que yo mismo había creado.\n\nOdiaba los ojos apagados , viendo que se desvanece esa luz , que me hacia feliz.\n\nY en los suyos vi algo demasiado familiar, demasiado cercano, algo que me partió por dentro porque ya lo había visto antes.\n\nBusqué en mis memorias — y te encontré a ti, mamá.\n\nJoder , mama , tenia tenia esos mismos ojos destrozandose cuando papa se iba\n\nMama Te vi perder cada día la luz de tu mirada. \nEsa luz que tenías antes, esa que brillaba, esa que papá fue apagando sin darse cuenta ahora yo mismo cometia ese pecado.\n\nTe vi cargar sola toda la carga , lo que papa y mama debían sostener.\n\nMama no quiero mirarme a la cara , por que tengo ese mismo rostro efimero y seco\n\nMama , te vi aguantar en silencio lo que yo, de niño, no sabía cómo nombrar pero sentía aquí , aqui en este corazon , en este mismo pecho donde ahora duele.\n\nY papá  que no quería darse cuenta, o que no quería enfrentarlo.\n\nSiguo con este mismo pensamiento que mrd significa ser un verdadero hombre.\n\n\nAhora entiendo por qué me congelaba. Nadie me enseñó a sostener lo difícil.\nPero eso — eso no me absuelve.\nLa cagué con personas que merecían más de mí. Y eso no tiene excusa — tiene nombre, y es el mío.\n\n\nPorque el hombre verdadero no es el que nunca cayó, es el que cayó, se miró al fondo, y eligió levantarse aunque nadie lo vio.\n\nEl que un día se dijo sin rodeos: esto ya no lo quiero en mi vida. Quiero algo mejor.\n\n\nLa turbulencia de la vida es un caos que nos suceden a todos , muchos de nuetros actos son de manera conciente y inconciente , si importa el resultado y si importa el proceso\n\n\nEl acto sucede por nuetra niñes cuando las experiencia que percibimos , cuestionan nuestro pensamiento interno , indirectamente afecta a nuestra personalidad\n\n\nsiguo con esa pregunta qué significa ser un verdadero hombre. ¿Es el que carga con todo sin doblarse sin cuestionarse? ¿El que protege sin que nadie sin que lo apoye? ¿El que entiende los sentimientos y aprende a sostenerlos sin romperse?\n\nEntonces —\n¿cuándo ocurre , ese paso , del niño al hombre verdadero? \n¿En qué noche turbulenta? \n¿En qué golpe recibido? \n¿En qué perdón explicado?\n\n\nNadie te dice que un hombre también llora en la ducha, con el agua a full, para que nadie escuche los llantos del corazon, para que nadie vea los cantilados de rio que se forman en mi pupilas, para que el dolor se vaya con el agua.\n\n\nTodavía no sé qué es un hombre.\nNo soy juez, ni jurado, ni verdugo. No me siento lleno. No me siento en paz.\nPero sé que el camino correcto no tiene recompensa, no tiene aplausos, no tiene nadie mirando.\nY lo quiero seguir igual.\nPorque me odiaría profundamente si volviera a ver a mamá con esos ojos tristes y vacíos — esos ojos que ya conozco, esos ojos que me enseñaron lo que nunca quiero volver a causar.\n\nEso — quizás — es lo más cercano a un hombre verdadero que he podido ser.\n\n\nDicen que detrás de un verdadero hombre siempre hay una gran mujer.\nMamá — tú eres esa mujer.\n\nLa que aguantó cuando todo se caía. La que siguió siendo luz aunque nadie se la pedia. La que me enseñó, sin saberlo, que hay una forma distinta de estar en el mundo.\nNo la de papá.\n\nY seguiré buscando esa respuesta. \n\nNo para tenerla — sino para romper el círculo.\n\nTodo hombre nace niño, pero no todo niño llega a ser un verdadero hombre.\n\nGracias",
+`,
   },
   {
     titulo: "ser hombre",
     categoria: "esperanza",
     fecha: "2026",
-    texto: "¿Qué significa ser un verdadero hombre?\n\n\nDicen que biológicamente\n es cromosoma XY,\n hormonas,\n anatomía.\n Una definición limpia.\n Fría.\n Sin cicatrices.\nDicen que socialmente\n es proveedor, protector,\n el que sostiene,\n el que no se dobla.\n Hoy evolucionamos, dicen.\n Hoy validamos la empatía,\n la inteligencia emocional,\n la corresponsabilidad.\nPalabras grandes.\n Palabras bonitas.\nY en psicología\n dicen que es construcción propia,\n identidad,\n valores,\n propósito de vida.\n\nSigo sin respuesta.\nY los años pasan.\nY la pregunta se queda\nclavada aquí,\nen este pecho\nque nadie enseñó a abrir.\n\nCumples dieciocho y ya te llaman hombre. Pero el espejo no entrega lo que el alma no ha ganado.\nY nadie te avisa\nque el nombre no alcanza,\nque la edad no basta,\nque el título llega vacío\ncuando nadie te enseñó\na llenarlo.\n\nBusco en mi interior y recuerdo las palabras de papa\n\n\" Eres un hombre carajo , deja de llorar o el siguiente golpe sera peor \"\n\nEres un hombre. Y los hombres no lloran.\n\nY así aprendí.\n No con palabras.\n Con el metal de mi sangre en los labios.\n Con la cara ensangrentada\n y un par de moretones\n que nadie llamó herida\n porque un hombre no se queja.\nY así crecemos...\n aprendiendo a sobrevivir\n antes de aprender a vivir.\n Aprendiendo a callar\n antes de aprender a decir.\nNadie te dice\n que hay noches\n en que te quedas mirando el techo,\n buscando soluciones que no llegan,\n mientras la tristeza\n se disfraza de cansancio\n porque un hombre no se queja.\nLa cagué tantas veces\n que ya no sé\n si camino hacia ese hombre verdadero\n o si me alejo de él\n con cada paso que doy.\n\n\nNo tengo un padre del que sentirme orgulloso. Cuántas veces lo quise muerto, y cuántas vezes entendí que no tenía sentido — reclamarle a alguien que no entiende lo que sienten las personas, lo que me hierve la sangre al ver ese rostro efimero y seco.\n\nLo vi levantar la voz donde debía haber palabras. \nLo vi irse donde debía quedarse. \nLo vi elegirse a él, siempre a él, mientras todo lo demás se caía.\n\nY yo — sin querer — aprendí el mismo idioma. \nLa misma huida. \nEl mismo frío.\n\nNo fui buena pareja. \nNo pude sostener lo que más importaba. \nElla sollosaba de tristeza y yo me quedaba quieto — sin moverme, sin salvarla, sin saber cómo cruzar esa distancia que yo mismo había creado.\n\nOdiaba los ojos apagados , viendo desvanecer la luz , que me hacia feliz.\n\nY en los suyos vi algo demasiado familiar, demasiado cercano, algo que me partió por dentro porque ya lo había visto antes.\n\nBusqué en mis memorias — y te encontré a ti, mamá.\n\nJoder , mama , tenia tenia esos mismos ojos destrozandose cuando papa se iba\n\nMama Te vi perder cada día la luz de tu mirada. \nEsa luz que tenías antes, esa que brillaba, esa que papá fue apagando sin darse cuenta ahora yo mismo cometia ese pecado.\n\nTe vi cargar sola toda la carga , lo que papa y mama debían sostener.\n\nMama No quiero mirarme a la cara\nporque tengo ese mismo rostro,\nfrío y seco,\nese que juré\nnunca ser.\n\nMama , te vi aguantar en silencio lo que yo, de niño, no sabía cómo nombrar pero sentía aquí , aqui en este corazon , en este mismo pecho donde ahora duele.\n\nY papá  que no quería darse cuenta, o que no quería enfrentarlo.\n\nSiguo con este mismo pensamiento que mrd significa ser un verdadero hombre.\n\n\nAhora entiendo por qué me congelaba. Nadie me enseñó a sostener lo difícil.\nPero eso .....  eso no me absuelve.\nLa cagué con personas que merecían más de mí. Y eso no tiene excusa — tiene nombre, y es el mío.\n\n\nPorque el hombre verdadero no es el que nunca cayó, es el que cayó, se miró al fondo, y eligió levantarse aunque nadie lo vio.\n\nEl que un día se dijo sin rodeos: esto ya no lo quiero en mi vida. Quiero algo mejor.\n\n\nLa turbulencia de la vida es un caos que nos suceden a todos , muchos de nuetros actos son de manera conciente y inconciente , si importa el proceso y el resultado si importa\n\nel romper un corazon , no tiene excusa\n\n\nEl acto sucede por nuetra niñes cuando las experiencia que percibimos , cuestionan nuestro pensamiento interno , indirectamente afecta a nuestra personalidad\n\n\nsiguo con esa pregunta qué significa ser un verdadero hombre. ¿Es el que carga con todo sin doblarse sin cuestionarse? ¿El que protege sin que nadie sin que lo apoye? ¿El que entiende los sentimientos y aprende a sostenerlos sin romperse?\n\nEntonces —\n¿cuándo ocurre , ese paso , del niño al hombre verdadero? \n¿En qué noche turbulenta? \n¿En qué golpe recibido? \n¿En qué perdón explicado?\n\n\nNadie te dice que un hombre también llora en la ducha, con el agua a full, para que nadie escuche los llantos del corazon, para que nadie vea los cantilados de rio que se forman en mi pupilas, para que el dolor se vaya con el agua.\n\n\nTodavía no sé qué es un hombre.\nNo soy juez, ni jurado, ni verdugo. No me siento lleno. No me siento en paz.\nPero sé que el camino correcto no tiene recompensa, no tiene aplausos, no tiene nadie mirando.\nY lo quiero seguir igual.\nPorque me odiaría profundamente si volviera a ver a mamá con esos ojos tristes y vacíos — esos ojos que ya conozco, esos ojos que me enseñaron lo que nunca quiero volver a causar.\n\nEso — quizás — es lo más cercano a un hombre verdadero que he podido ser.\n\n\nDicen que detrás de un verdadero hombre siempre hay una gran mujer.\nMamá — tú eres esa mujer.\n\nLa que aguantó cuando todo se caía. La que siguió siendo luz aunque nadie se la pedia. La que me enseñó, sin saberlo, que hay una forma distinta de estar en el mundo.\nNo la de papá.\n\nY seguiré buscando esa respuesta. \n\nNo para tenerla — sino para romper el círculo.\n\nTodo hombre nace niño, pero no todo niño llega a ser un verdadero hombre.\n\nGracias, mamá.",
+    texto: `
+¿Qué significa ser un verdadero hombre?
+
+Dicen que biológicamente
+ es cromosoma XY,
+ hormonas,
+ anatomía.
+ Una definición limpia.
+ Fría.
+ Sin cicatrices.
+Dicen que socialmente
+ es proveedor, protector,
+ el que sostiene,
+ el que no se dobla.
+ Hoy evolucionamos, dicen.
+ Hoy validamos la empatía,
+ la inteligencia emocional,
+ la corresponsabilidad.
+Palabras grandes.
+ Palabras bonitas.
+Y en psicología
+ dicen que es construcción propia,
+ identidad,
+ valores,
+ propósito de vida.
+
+Sigo sin respuesta.
+Y los años pasan.
+Y la pregunta se queda
+clavada aquí,
+en este pecho
+que nadie enseñó a abrir.
+
+Cumples dieciocho y ya te llaman hombre. Pero el espejo no entrega lo que el alma no ha ganado.
+Y nadie te avisa
+que el nombre no alcanza,
+que la edad no basta,
+que el título llega vacío
+cuando nadie te enseñó
+a llenarlo.
+
+Busco en mi interior y recuerdo las palabras de papa
+
+" Eres un hombre carajo , deja de llorar o el siguiente golpe sera peor "
+
+Eres un hombre. Y los hombres no lloran.
+
+Y así aprendí.
+ No con palabras.
+ Con el metal de mi sangre en los labios.
+ Con la cara ensangrentada
+ y un par de moretones
+ que nadie llamó herida
+ porque un hombre no se queja.
+Y así crecemos...
+ aprendiendo a sobrevivir
+ antes de aprender a vivir.
+ Aprendiendo a callar
+ antes de aprender a decir.
+Nadie te dice
+ que hay noches
+ en que te quedas mirando el techo,
+ buscando soluciones que no llegan,
+ mientras la tristeza
+ se disfraza de cansancio
+ porque un hombre no se queja.
+La cagué tantas veces
+ que ya no sé
+ si camino hacia ese hombre verdadero
+ o si me alejo de él
+ con cada paso que doy.
+
+No tengo un padre del que sentirme orgulloso. Cuántas veces lo quise muerto, y cuántas vezes entendí que no tenía sentido — reclamarle a alguien que no entiende lo que sienten las personas, lo que me hierve la sangre al ver ese rostro efimero y seco.
+
+Lo vi levantar la voz donde debía haber palabras.
+Lo vi irse donde debía quedarse.
+Lo vi elegirse a él, siempre a él, mientras todo lo demás se caía.
+
+Y yo — sin querer — aprendí el mismo idioma.
+La misma huida.
+El mismo frío.
+
+No fui buena pareja.
+No pude sostener lo que más importaba.
+Ella sollosaba de tristeza y yo me quedaba quieto — sin moverme, sin salvarla, sin saber cómo cruzar esa distancia que yo mismo había creado.
+
+Odiaba los ojos apagados , viendo desvanecer la luz , que me hacia feliz.
+
+Y en los suyos vi algo demasiado familiar, demasiado cercano, algo que me partió por dentro porque ya lo había visto antes.
+
+Busqué en mis memorias — y te encontré a ti, mamá.
+
+Joder , mama , tenia tenia esos mismos ojos destrozandose cuando papa se iba
+
+Mama Te vi perder cada día la luz de tu mirada.
+Esa luz que tenías antes, esa que brillaba, esa que papá fue apagando sin darse cuenta ahora yo mismo cometia ese pecado.
+
+Te vi cargar sola toda la carga , lo que papa y mama debían sostener.
+
+Mama No quiero mirarme a la cara
+porque tengo ese mismo rostro,
+frío y seco,
+ese que juré
+nunca ser.
+
+Mama , te vi aguantar en silencio lo que yo, de niño, no sabía cómo nombrar pero sentía aquí , aqui en este corazon , en este mismo pecho donde ahora duele.
+
+Y papá  que no quería darse cuenta, o que no quería enfrentarlo.
+
+Siguo con este mismo pensamiento que mrd significa ser un verdadero hombre.
+
+Ahora entiendo por qué me congelaba. Nadie me enseñó a sostener lo difícil.
+Pero eso .....  eso no me absuelve.
+La cagué con personas que merecían más de mí. Y eso no tiene excusa — tiene nombre, y es el mío.
+
+Porque el hombre verdadero no es el que nunca cayó, es el que cayó, se miró al fondo, y eligió levantarse aunque nadie lo vio.
+
+El que un día se dijo sin rodeos: esto ya no lo quiero en mi vida. Quiero algo mejor.
+
+La turbulencia de la vida es un caos que nos suceden a todos , muchos de nuetros actos son de manera conciente y inconciente , si importa el proceso y el resultado si importa
+
+el romper un corazon , no tiene excusa
+
+El acto sucede por nuetra niñes cuando las experiencia que percibimos , cuestionan nuestro pensamiento interno , indirectamente afecta a nuestra personalidad
+
+siguo con esa pregunta qué significa ser un verdadero hombre. ¿Es el que carga con todo sin doblarse sin cuestionarse? ¿El que protege sin que nadie sin que lo apoye? ¿El que entiende los sentimientos y aprende a sostenerlos sin romperse?
+
+Entonces —
+¿cuándo ocurre , ese paso , del niño al hombre verdadero?
+¿En qué noche turbulenta?
+¿En qué golpe recibido?
+¿En qué perdón explicado?
+
+Nadie te dice que un hombre también llora en la ducha, con el agua a full, para que nadie escuche los llantos del corazon, para que nadie vea los cantilados de rio que se forman en mi pupilas, para que el dolor se vaya con el agua.
+
+Todavía no sé qué es un hombre.
+No soy juez, ni jurado, ni verdugo. No me siento lleno. No me siento en paz.
+Pero sé que el camino correcto no tiene recompensa, no tiene aplausos, no tiene nadie mirando.
+Y lo quiero seguir igual.
+Porque me odiaría profundamente si volviera a ver a mamá con esos ojos tristes y vacíos — esos ojos que ya conozco, esos ojos que me enseñaron lo que nunca quiero volver a causar.
+
+Eso — quizás — es lo más cercano a un hombre verdadero que he podido ser.
+
+Dicen que detrás de un verdadero hombre siempre hay una gran mujer.
+Mamá — tú eres esa mujer.
+
+La que aguantó cuando todo se caía. La que siguió siendo luz aunque nadie se la pedia. La que me enseñó, sin saberlo, que hay una forma distinta de estar en el mundo.
+No la de papá.
+
+Y seguiré buscando esa respuesta.
+
+No para tenerla — sino para romper el círculo.
+
+Todo hombre nace niño, pero no todo niño llega a ser un verdadero hombre.
+
+Gracias, mamá.",
+  },
+
+  {
+`,
   },
   {
-    titulo: "Me gusta estar solo ahora , se que perdi cosas y…",
-    categoria: "desamor",
-    fecha: "2024",
-    texto: "Me gusta estar solo ahora , se que perdi cosas y personas\npero no me disgusta ahora mismo , por que me amo un poco mas a mi mismo \nSe que hize todo lo que pude para no perderlos , pero me elegi a mi mismo para no perderme despues \nAhora ando tranquilo sin molestias ni errores , ando mejor cada dia \nSe que decia que terminaba y seguia con otra cosa\nSe que me falta mucho para llegar a ser la persona que quiero , pero me siento mejor por que lo estoy haciendo no perfecto no de la forma que queria\npero al menos lo hago \nEs lo que hace que mi corazon sigua y es la razon por que la no me rindo todavia\nSe que perdere tal vez mas personas , tal vez pierda mas de lo debido \nPero ahora ya no sera lo mismo ahora sere algo mejor de mi mismo una mejor version\nPor que ahora lo tengo claro , las metas , lo que debo hacer y como lo debo hacer\n\nEl amor que quisiera compartir con alguien ya no es prioridad , ahora mi prioridad es yo solo amarme \n\nQuiero amarme tanto que no me arrepienta de mis pasos , ni menos de acciones\n\nAlgo que yo debo hacer y quiero hacerlo de corazon",
-  },
-  {
-    titulo: "Toxica 2",
+    titulo: "Toxica",
     categoria: "desamor",
     fecha: "2026",
-    texto: "mayoría de las historias\ncomienzan con el protagonista.\nLa mía empezó el día\nque aprendí a escuchar mi corazón —\nel día que entendí\nque mis pulsaciones ya no me pertenecían,\nporque ya no latían por mí.\nLatían por vos.\nEs extraño que algo de mí\name todo de ti.\nParece brujería antigua.\nO mejor dicho —\namor a la antigua.\n¿Por qué esta necesidad\nde pensar en alguien\nsabiendo que todo termina?\nTal vez llegue la muerte primero,\ntal vez me dejes tú,\ntal vez sea yo quien se vaya.\nAlgo burdo.\nPatético, la verdad.\nDicen que lo importante está adentro —\npero tu sangre no es compatible con la mía.\nTú eres O negativo.\nYo solo A positivo.\nNi tus órganos me servirían,\nni los míos a los tuyos.\nY aun así\nme gusta hablar contigo.\nSe siente bien.\nComo esperar el amanecer\ny sentir los primeros rastros de luz\ntocando la piel —\nese calor suave,\nese primer sol sobre los párpados cerrados,\nabriéndose sin prisa.\nTe miro\ny la misma luz que apenas roza el mundo\ntambién te roza a ti,\ny el cuerpo se suelta sin darse cuenta.\nTu rostro resplandece\ncon un tono que parece venir de adentro.\nY ahí —\nmirándote —\nesto es alegría encontrada.\nNo fuiste mi primer beso,\npero añoro tus labios.\nNo fuiste mi primer amor,\npero deseo que no seas el último.\nPero algo está mal.\nAlgo no se siente bien.\nAlgo siempre estuvo roto.\nSí —\nparece cursi.\nComo si estuviera soñando\nalgo hermoso.\nY es que, en realidad,\nsí lo estoy.\nAl final no era amor.\nNo era química.\nSolo queríamos sentir un poco de calor\ndespués de tanto frío.\nEra desesperación.\nEra un apego hecho de sufrimiento —\ndos personas rotas\nintentando repararse la una a la otra.\n¿Cómo amar a alguien\nsi no somos capaces\nde amarnos a nosotros mismos?\nLo más extraño de todo:\nel cigarrillo ya no calmaba mi ansiedad,\nporque los motivos habían cambiado.\nEl sabor del vino\nya no era el mismo.\n¿Cómo llegamos hasta acá?\n¿Cómo sucedió esto?\n¿Por qué nos sentimos así?\nEste sabor se volvió amargo.\nEstamos intoxicados.\nApago el cigarrillo.\nY de la garganta me entumece algo\nque ya no cabe en palabras.\nTe extraño.\nLo confieso.\nPero a eso quedarás reducida —\na un pensamiento inoportuno.\nYa no haré intentos.\nMe acostumbraré a mis lamentos.\nMe haré juramentos en la carne.\nRomperé las fotos sin aliento.\nNuestra fiesta ya pertenece al pasado.\nLos pasos se dieron.\nNo hay más que hacer.\nPero tu sonrisa sigue clavada en mi piel\ncomo un eco que no sé perder.\nEstoy cargado de la impotencia que me dejaste —\nperdido,\ndesamparado,\nhuérfano de un amor ya terminado.\nLo añoro y a la vez lo odio.\nCuento cada segundo.\nA veces lo insulto.\nPronuncio improperios contra el aire\nporque en la garganta\nya no me aguantan.\nQuiero salir de este lugar.\nQuiero que alguien me devuelva la luz,\nporque ando perdido\nen la sombra de tu sonrisa.\nAlto.\nBasta.\nTengo que soltar tu nombre,\nsoltar la foto,\nsoltar el humo.\nRespiro una vez.\nDos.\nTres que me ahogan.\nCuatro que son por vos.\nCinco que aprietan el corazón hacia atrás.\nMaldición.\n¿Desde cuándo mi pecho tiembla tan rápido?\nLas manos no son mías.\nEl aire viene pálido.\nSeis golpea el vidrio.\nSiete suena a cálido.\nOcho es un susurro.\nNueve es un relámpago.\nDiez...\nDiez se queda sin par.\nNo encuentra eco.\nQuieto.\nQuieto.\nLos dedos vuelven a ser dedos.\nEl pecho afloja —\nsolo un poco.\nEl aire ya no pelea por entrar.\nRespiro.\nSin contar.\nY la razón regresa\ncomo un huésped callado,\nse sienta a mi lado sin pedir permiso,\nno dice nada,\nporque ya no hace falta.\nTú no volverás a mí.\nY yo —\npor fin —\ntampoco volveré a ti.",
+    texto: `
+mayoría de las historias
+comienzan con el protagonista.
+La mía empezó el día
+que aprendí a escuchar mi corazón —
+el día que entendí
+que mis pulsaciones ya no me pertenecían,
+porque ya no latían por mí.
+Latían por vos.
+Es extraño que algo de mí
+ame todo de ti.
+Parece brujería antigua.
+O mejor dicho —
+amor a la antigua.
+¿Por qué esta necesidad
+de pensar en alguien
+sabiendo que todo termina?
+Tal vez llegue la muerte primero,
+tal vez me dejes tú,
+tal vez sea yo quien se vaya.
+Algo burdo.
+Patético, la verdad.
+Dicen que lo importante está adentro —
+pero tu sangre no es compatible con la mía.
+Tú eres O negativo.
+Yo solo A positivo.
+Ni tus órganos me servirían,
+ni los míos a los tuyos.
+Y aun así
+me gusta hablar contigo.
+Se siente bien.
+Como esperar el amanecer
+y sentir los primeros rastros de luz
+tocando la piel —
+ese calor suave,
+ese primer sol sobre los párpados cerrados,
+abriéndose sin prisa.
+Te miro
+y la misma luz que apenas roza el mundo
+también te roza a ti,
+y el cuerpo se suelta sin darse cuenta.
+Tu rostro resplandece
+con un tono que parece venir de adentro.
+Y ahí —
+mirándote —
+esto es alegría encontrada.
+No fuiste mi primer beso,
+pero añoro tus labios.
+No fuiste mi primer amor,
+pero deseo que no seas el último.
+Pero algo está mal.
+Algo no se siente bien.
+Algo siempre estuvo roto.
+Sí —
+parece cursi.
+Como si estuviera soñando
+algo hermoso.
+Y es que, en realidad,
+sí lo estoy.
+Al final no era amor.
+No era química.
+Solo queríamos sentir un poco de calor
+después de tanto frío.
+Era desesperación.
+Era un apego hecho de sufrimiento —
+dos personas rotas
+intentando repararse la una a la otra.
+¿Cómo amar a alguien
+si no somos capaces
+de amarnos a nosotros mismos?
+Lo más extraño de todo:
+el cigarrillo ya no calmaba mi ansiedad,
+porque los motivos habían cambiado.
+El sabor del vino
+ya no era el mismo.
+¿Cómo llegamos hasta acá?
+¿Cómo sucedió esto?
+¿Por qué nos sentimos así?
+Este sabor se volvió amargo.
+Estamos intoxicados.
+Apago el cigarrillo.
+Y de la garganta me entumece algo
+que ya no cabe en palabras.
+Te extraño.
+Lo confieso.
+Pero a eso quedarás reducida —
+a un pensamiento inoportuno.
+Ya no haré intentos.
+Me acostumbraré a mis lamentos.
+Me haré juramentos en la carne.
+Romperé las fotos sin aliento.
+Nuestra fiesta ya pertenece al pasado.
+Los pasos se dieron.
+No hay más que hacer.
+Pero tu sonrisa sigue clavada en mi piel
+como un eco que no sé perder.
+Estoy cargado de la impotencia que me dejaste —
+perdido,
+desamparado,
+huérfano de un amor ya terminado.
+Lo añoro y a la vez lo odio.
+Cuento cada segundo.
+A veces lo insulto.
+Pronuncio improperios contra el aire
+porque en la garganta
+ya no me aguantan.
+Quiero salir de este lugar.
+Quiero que alguien me devuelva la luz,
+porque ando perdido
+en la sombra de tu sonrisa.
+Alto.
+Basta.
+Tengo que soltar tu nombre,
+soltar la foto,
+soltar el humo.
+Respiro una vez.
+Dos.
+Tres que me ahogan.
+Cuatro que son por vos.
+Cinco que aprietan el corazón hacia atrás.
+Maldición.
+¿Desde cuándo mi pecho tiembla tan rápido?
+Las manos no son mías.
+El aire viene pálido.
+Seis golpea el vidrio.
+Siete suena a cálido.
+Ocho es un susurro.
+Nueve es un relámpago.
+Diez...
+Diez se queda sin par.
+No encuentra eco.
+Quieto.
+Quieto.
+Los dedos vuelven a ser dedos.
+El pecho afloja —
+solo un poco.
+El aire ya no pelea por entrar.
+Respiro.
+Sin contar.
+Y la razón regresa
+como un huésped callado,
+se sienta a mi lado sin pedir permiso,
+no dice nada,
+porque ya no hace falta.
+Tú no volverás a mí.
+Y yo —
+por fin —
+tampoco volveré a ti.",
+  },
+    {
+`,
+  },
+  {
+    titulo: "la noche y sus motores",
+    categoria: "tristeza",
+    fecha: "2020",
+    texto: `
+El amor es pasajero y ambiguo. Ya no significa nada en esta época de mentirosos y mendigos.
+Habito una ciudad que pesa nombres, donde todo reluce y nada se rompe. Y sin embargo hay algo que me falta, algo que estaba ami lado: me faltas tú.
+Me encantaría que estuvieras aquí, viendo cómo logré lo que alguna vez te conté — seguir teniendo nuestro ritual de triunfos, nuestros tiempos de paz, nuestros tiempos de amor.
+Me hubiera regocijado al sostener tu mano, no solo viendo mis logros sino sabiendo que tú los acompañas.
+Lo que alguna vez te conté , te lo dije en susurros en una noche fria como esta, cerrada de bulla, con todo afuera haciendo ruido y nosotros dos coexistiendo adentro. Esa misma bulla era solo fondo.
+Tal vez era necesario perderte para poder llegar hasta aquí.
+Yo fui quien cortó el hilo que nos unía. No porque te dejara de amar — fue el dolor de saber que esto se había acabado hace tiempo, que solo estábamos tratando de arreglar algo que ya no tenía arreglo.
+Te hubieras quedado en mi vida. Se puso increíble.
+O tal vez se puso increíble porque te fuiste.
+Recién empieza las noches. La bulla que antes no tenía ahora es motor y ruido, es la noche y sus motores.
+La noche me aturde , me indica que todo sigue aunque yo quiero que pare. Podría reconocer qué carro está muriendo y cuál arrancará de nuevo al alba.
+Me lastima los oídos, me destroza en verbos diferentes, sin ninguna singularidad que me salve.
+Estoy en un abismo que pasa por mis ojos: desecho.
+Desearía que fuera literal, para al menos saber que esto tiene un punto final. Al menos saber que no estoy acabado, que mis palabras no caen en el olvido, que existo.
+Me encantaría que todo fuera distinto, pero te quise de formas que no sé nombrar y no entiendo cómo debería olvidarte.
+Te recuerdo en las cosas pequeñas, en los motivos absurdos, te recuerdo, te extraño.
+Diría que estoy en un mar de insonmios, pero no lo estoy.
+Estoy desesperado, como nunca. Desahuciado. Molesto con todos, conmigo especialmente.
+Quisiera que al menos lo que hago tenga sentido.
+Estoy desahuciado en una ciudad importante, con todos sus motores.
+
+y yo solo quiero volver a esos momentos"},
+  {
+`,
+  },
+  {
+    titulo: "Mentirme que no estas",
+    categoria: "tristeza",
+    fecha: "2020",
+    texto: `
+Hoy quisiera creer que estás aquí. Mentirme, decirme que nunca fuiste mía, que tu nombre nunca rozó mi alma, que jamás, en silencio, te puse por encima de mi vida.
+Pero cada poema que te escribo no nace del amor — nace del filo de un "tal vez" sin desenlace, de una herida que el tiempo no deshace, de un arrepentimiento que llevo en el corazon.
+Escribo para herirme, para morder el aire entre los dientes, para romperme en pedazos y sentir, por un instante, lo que tú sentiste antes.
+Y aún así te recuerdo entera
+
+Recuerdo cada detalle de rostro
+El hoyuelo junto a tu labio izquierdo cuando algo te hacía gracia y mostrabas tu bella sonrisa; el lunar pequeño cerca de tu oreja que descubrí una tarde cualquiera y sentí mío por haberlo visto primero.
+La fragancia de amapolas en el cuello de tu ropa, en el reverso de tus muñecas;
+
+la forma desafiante de mirar cuando el mundo te exigía bajar la cabeza;
+los puños apretados dentro del bolsillo para que los perros no olieran tu miedo callado y sencillo.
+
+Te busco aún. En los besos que me diste, en las calles que cruzamos sin mirar, en las rosas que te di una por una, en aquel baile sin música ninguna, sin público, sin nadie. Te busco en cada parte, en cada calle.
+Te reconocería en cualquiera persona, pero hoy sé que eres otra: una extraña con tu mismo rostro y tus mismos recuerdos por sombra del pasado.
+No es el silencio lo que me atormenta — es el vacío que dejaste en él. Te di el poder de quebrarme completo y no me arrepiento, lo confieso: hay cicatrices que, sin saberlo, nos vuelven mejores con el tiempo eterno.
+
+Pero esta noche no. Esta noche tiembla todo — las manos, la sangre, el aire.
+
+ Respiro, respiro, y ni la morfina alcanza para calmar este pecho sin esperanza.
+
+Dime por qué. Para qué estamos aquí.
+Por qué estoy tan roto, por qué no encuentro modo de decirlo, de explicarlo, de salir de este nudo en el que ahora habito.
+
+Indícame el camino — estoy suplicando la atención de alguien que ya no existe salvo en mis pensamientos intrusivos.
+
+Perceptivo a lo profundo, me inundo en este mundo, estoy como un moribundo mendigando un segundo de la mujer que perdí aunque la vea aquí.
+
+Mendigo entre mendigos, mintiéndome despierto, buscando en el espejo un rostro que no acierto
+
+Ese rostro no existe y solo estare en mi recuerdos pensando en ti
+
+"},
+  {
+`,
+  },
+  {
+    titulo: "Manifiesto a quien no se atreve",
+    categoria: "tristeza",
+    fecha: "2020",
+    texto: `
+Vivir significa arriesgar tu existencia, aunque implique desaparecer. Porque si no, sos apenas un montón de huesos, carne y química: una masa inerte, tan frágil que cualquier soplo te devuelve al polvo del que naciste. Sin canciones. Sin rastro. Una vida sin el valor que vos decidiste no ponerle. Y no hay excusa que valga: los muertos no hablan.
+
+Hay quien muere como muere un poeta que nunca escribió un verso: con todas las palabras adentro, pudriéndose bajo la tierra , tan fria y desolada , podrias haber creado los mejores versos que cambien a personas.  No lo hicistes
+
+No es cobardía hablar de sentimientos: de ellos nacieron los mejores momentos. Ocultarlos es de desvergonzados — púdrete si lo haces. Es de tibios cargar arrepentimientos y culpar al pasado
+
+Tu valor no lo define tu entorno — lo defines tú. "Maltrecho", "marchito", te describen. Joder: les faltan dos pizcas de azúcar en el café.
+
+Te hablo y te reclamo: ¿cuándo vas a poner un alto? Un niño tiene más ambición que vos, porque aunque tenga miedo igual lo hace. Vos, que sabés más, te hacés para atrás. Y te lo pregunto en la cara: ¿confiás en lo que podés? ¿Sos directo, o te escondés en cada aprieto y le llamás razón a lo primero que te salga?
+
+Pero no te culpo. Nadie se vuelve tibio por gusto.
+Hay miedos que no se eligen. Se aprenden. Alguna vez diste un paso, y el mundo te cobró por darlo — y el cuerpo, que es buen alumno, entendió rápido lo que la mente tarda años en perdonar. Desde entonces, cada puerta te parece una trampa.
+Y no ayudó el lugar donde creciste. Un mundo que no premia al que se entrega, donde los valores no pesan en la balanza, donde el que se guarda llega antes que el que se ofrece. Fuiste amable. Fuiste confiable. Y mirá lo que el mundo hizo con eso: te enseñó que era una desventaja.
+Tampoco te dieron tiempo. A algunos la vida les pone el peso encima antes de que las manos aguanten — y uno aprende a cargar, no a soñar; a resistir, no a arriesgar. El que sostiene una casa demasiado pronto no tiene cuándo equivocarse.
+Y sí, también están tus decisiones. Las veces que pudiste y elegiste la orilla. Esa es la parte que duele nombrar, porque ahí ya no hay a quién señalar. El miedo viene de afuera; quedarse, en algún momento, se vuelve tuyo.
+Cada uno carga un peso en la conciencia, angustias sin nombre, cosas que el subconsciente sabe aunque la boca las niegue. Ahí están. No se van porque mires para otro lado.
+Entender de dónde venís no te devuelve los versos que no escribiste. El pasado explica el miedo; no lo absuelve. Esa es la verdad incómoda: saber por qué te quedaste quieto no te levanta de la silla.
+
+Así que levantate igual. No porque ya no tengas miedo — no lo vas a perder —, sino con él a cuestas, como el niño. Pensaste que habías dado todo, y un día todo dejó de alcanzar. Bien. Que no alcance es la prueba de que todavía estás vivo para querer más.
+Las verdades difíciles no se dicen para herir. Se dicen porque callarlas es una deuda, y la verdad cobra intereses.
+Yo pago la mía con vino y con páginas: me siento, escribo, me sangro entero. Vos decidí cómo pagás la tuya. O morite con todos tus versos adentro.
+
+Empieza de nuevo: vamos 1 — y estás hasta el pedo, 2 — y estás alzando la voz, 3 — no todo está al revés, 4 — te falta más impacto, 5 — todavía estás con estrés, 6 — vamos otra vez, 7 — ya sabes cómo se siente, 8 — estamos locos, 9 — mira cómo te mueves, 10 — mírate. ¿Así te ves?
+
+-----
+
+Puedo decirte mis improperios, pero entiende: no soy tu enemigo. Tu enemigo está a la 1 de la madrugada, en tu subconsciente — ese que no entiendes, el que te encuentra destrozado y suelta a tus demonios."},  {
+`,
+  },
+  {
+    titulo: "MARINADO EN BULLA",
+    categoria: "tristeza",
+    fecha: "2020",
+    texto: `
+I. El ruido
+Me marinaron sin preguntarme.
+Respiro. Mi cabeza no quiere pensar, ya no quiero que piense, porque un don de pensar se ha vuelto tan caótico y destructivo.
+No es un zumbido, es un estruendo en el interior que no se detiene. Cómo le explico al retuello que no es sintonía, es bulla y solo bulla.
+Estoy marinado: un litro de la bulla de los motores, dos horas de camino al trabajo, dos tazas de bocinas, dos shots de tv basura, media copa de sueño.
+¿Desde cuándo el silencio se volvió hermoso?
+II. El ascenso
+Llevo años marinándome y no lo sabía.
+Adicto al trabajo, constante, marino navegando en el caos aplastante de la máquina llamada empresa. ¿Y qué es prioritario para una empresa? Tenerlo todo ahora mismo, sin entender de tiempo ni de circunstancias.
+Ya todo cambió: ya no soy el que hacía los encargos, ahora yo dirijo los encargos, y es pesado, completamente pesado.
+Soy esclavo de los aplausos en la oficina. Mis padres ahora son mi trabajo: ese calor de un buen trabajo no está en casa, está en el trabajo que me satura, y a mí ya no me queda casa.
+El chiste de lo indispensable ya no me hace reír. Estoy destrozado en el interior, sepultado en mil palabras vacías. No es ingenio de mi mente: es mi vida hecha petróleo, consumiéndose en cada rugido del motor.
+III. La renuncia
+Hoy no marino nada.
+Esta mañana se siente distinta, fugaz e intrépida. Hoy no fui a trabajar. Me encantaría dar una buena excusa, pero no tiene sentido, si al final tendré que reponerlo.
+Lo admito: tengo que conciliar conmigo, apagar un rato los pensamientos, que ni dormir me dejan. Apago los motores, una bocina a la vez, hasta que el estruendo sea solo zumbido, y el zumbido, nada.
+Ya no seré dependiente de este barco que ha destrozado mis pensamientos. Quiero navegar a un lugar alejado y vacío, quiero encontrar esa oscuridad, estar absolutamente en la nada, y después de tanto tiempo, volver a escucharme.
+Lo siento, jefe, pero esta es mi renuncia.
+Mañana no vendre , ni pasado , ni despues , eliguo mi paz y morir un poco
+Antes de estar seguir en la tormenta
+`,
   },
 ];
