@@ -16,66 +16,7 @@ const CATEGORIAS = [
 ];
 
 const POEMAS = [
-  {
-    titulo: "la oscuridad , tan inmenso y frio",
-    categoria: "tristeza",
-    fecha: "2020",
-    texto: `
-la oscuridad , tan inmenso y frio
-los sentimientos se vuelven mas notorios y mas dolorosos
-sufriendo todo
-no quiero estaar solo pide mi corazon
-pero mi razon , quiere que no dependa de los demas
-y es un problema , como tantos que tuve
-pero este se repite y odio eso
-ando  solo cominando , en el frio calle .... mirando las personas
-, las csas , las calles , el sol y su amanecer
-Oh¡ es hermoso , me tranquiliza , es tan relajante ..
-la noche llega , todo se oscurece , las luces se van prendiendo
-los niños del parque se estan iendo
-los inter estan repletos y gritando
-
-pasare a comprar pan , tal vez esta noche estee toda la familia
-hace tiempo que no los veo juntos
-
-hare la cena , tomaremos cafe , espero que les guste
-
-mi mirada anda perdida , mi ojos estan cansados mis piernas no sienten nada, ni el frio el tiempo no se detiene
-los carros van y vienen ...
-Que triste mi vida ...
-
-entro a la panaderia , esta lleno
-se siente el rico olor del pan saliendo del horno
-Es hipnotiante .... vale la pena esperar
-mientras sigua saliendo ese aroma
-bueno sin darme cuenta es mi turno... pan integral como siempre
-
-regresando los emolientes salieron , esta vez no le comprare a mi casera , se me acabo la plata
-debi traer mas
-
-llegando a mi casa , solo una luz esta prendida
-habra venido mi padre ?
-
-Abro la puerta y solo esta mi primo ...
-cenare otra vez solo
-mi primo , se compra de la calle y siempre que le invito algo me rechaza
-
-entrando a mi cuarto , veo que no me gusta .. esta desordenado ...
-no quiero ver el celular ... tal vvez me llaman para tomar
-y no quiero cometer otro error esta semana
-
-vere que puedo hacer en este tiempo
-
-me falta hacer algunas tareas , terminare de hacerlas
-...
-pasaron 3 horas , mi madre llega
-
-se va a su cuarto solo a domir
-
-dentro de otras 2 horas llegua mi padre
-y se sale de nuevo
-`,
-  },
+ 
   {
     titulo: "No saltes por favor",
     categoria: "tristeza",
