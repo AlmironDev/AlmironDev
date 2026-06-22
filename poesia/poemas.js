@@ -1,138 +1,767 @@
 /* =====================================================================
-   TUS POEMAS
-   ---------------------------------------------------------------------
-   Para agregar un poema nuevo, copia un bloque { ... } y edítalo.
-   Campos:
-     titulo     -> título del poema
-     categoria  -> debe coincidir con una de CATEGORIAS (id)
-     fecha      -> texto libre (ej. "2024" o "Marzo 2024")
-     texto      -> el poema. Usa \n para saltos de línea, o escribe
-                   usando comillas invertidas (`) para varias líneas.
+   TUS POEMAS  — importados desde Google Keep (dedupe: solo versión más reciente)
+   Categorías asignadas por heurística: REVISA y reordena a gusto.
+   categoria válida: amor | tristeza | sentimiento | esperanza | desamor
    ===================================================================== */
 
 const CATEGORIAS = [
-  { id: "todos",       nombre: "Todos",        emoji: "✦"  },
-  { id: "amor",        nombre: "Amor",         emoji: "❤️" },
-  { id: "tristeza",    nombre: "Tristeza",     emoji: "🌧️" },
-  { id: "sentimiento", nombre: "Sentimiento",  emoji: "🌙" },
-  { id: "esperanza",   nombre: "Esperanza",    emoji: "🌅" },
-  { id: "desamor",     nombre: "Desamor",      emoji: "🥀" },
+  { id: "todos",       nombre: "Todos",        emoji: "\u2726"  },
+  { id: "amor",        nombre: "Amor",         emoji: "\u2764\uFE0F" },
+  { id: "tristeza",    nombre: "Tristeza",     emoji: "\uD83C\uDF27\uFE0F" },
+  { id: "sentimiento", nombre: "Sentimiento",  emoji: "\uD83C\uDF19" },
+  { id: "esperanza",   nombre: "Esperanza",    emoji: "\uD83C\uDF05" },
+  { id: "desamor",     nombre: "Desamor",      emoji: "\uD83E\uDD40" },
 ];
 
 const POEMAS = [
   {
-    titulo: "Tu nombre en el viento",
+    titulo: "Te acepte , te quiero mucho .. pero todavía no p…",
     categoria: "amor",
-    fecha: "2024",
-    texto: `Te escribo en el aire con letras de luz,
-y el viento te lleva donde quiera que estés.
-No importa la noche, ni cuánta es la cruz:
-mi pecho te nombra una y otra vez.
-
-Si el mundo se apaga y no queda calor,
-buscaré en tus manos mi último abril.
-Porque amarte, mi cielo, no es solo un favor,
-es la única patria que aprendí a sentir.`,
-  },
-  {
-    titulo: "Lo que el silencio guarda",
-    categoria: "amor",
-    fecha: "2023",
-    texto: `Hay un beso que no te he dado todavía,
-duerme en mi boca esperando tu señal.
-Y aunque calle, mi sangre te confía
-que sin ti la mañana no es igual.`,
-  },
-  {
-    titulo: "Lluvia sobre la ventana",
-    categoria: "tristeza",
-    fecha: "2024",
-    texto: `Cae la lluvia como caen los recuerdos,
-sin permiso, despacio, sobre el cristal.
-Y yo, que de tristezas soy experto,
-la miro deshacerse igual que el final.
-
-No lloro: solo dejo que la tarde
-me preste sus goteras para hablar.
-Que llueva, que se moje lo cobarde,
-que el agua diga lo que no sé contar.`,
-  },
-  {
-    titulo: "Habitación vacía",
-    categoria: "tristeza",
     fecha: "2022",
-    texto: `Quedó tu taza, quedó tu reloj,
-quedó la forma exacta de tu ausencia.
-Y en cada cosa que tu mano dejó
-aprendo el oficio duro de la paciencia.`,
+    texto: "Te acepte , te quiero mucho .. pero todavía no puedo entender que por mis ojos eres perfecta completamente perfecta , eres maravillosa todavía no entiendo que tú no lo pueda  ver lo hermosa que eres \nEnserio te quiero , pero nose si estar a tu lado , ando intentando que eres perfecta pero tú todavía no lo notas o no quieres verlo \n\nRaioz a vezes pienso que no escuchas si te cuento algunas cosas \nEso me molesta , ya ni tengo ganas de decirte algo\nA vezes quiero darte amor y cariño , pero no lo siento de tu parte \nSi hago alguna queja , sería estúpida \nTal vez para ti no te importe pero para mí si \n\nA vezes pienso que es por vergüenza\nOtras vezes quise agarrarte la mano , pero no sentí nada de ti \nEs como si no lo quisieras\n\nSon cosas muy simples y estupidas \nPero me importan \n\nYa no quiero decirte nada \nYa nose",
   },
   {
-    titulo: "Lo que siento y no digo",
-    categoria: "sentimiento",
+    titulo: "No fue la melodia tuya que me cautivo, fue tu so…",
+    categoria: "amor",
+    fecha: "2023",
+    texto: "No fue la melodia tuya que me cautivo, fue tu sonrisa la que me enamoro",
+  },
+  {
+    titulo: "Mi corazon quiere estar contigo",
+    categoria: "amor",
+    fecha: "2023",
+    texto: "Mi corazon quiere estar contigo\n\nPero mi otra parte piensa que te hara mas daño, asi que nose que hacer\n\nPor favor dimelo",
+  },
+  {
+    titulo: "Clic Fer",
+    categoria: "amor",
+    fecha: "2023",
+    texto: "Nunca crei encontrar mi alma gemela o amor a primera vista hasta que te conocí\n\nDesde que hablamos y hablamos esa noche algo hizo clic dentro de mi\n\nFue algo que nunca habia experimentado, jamas le habia contado mi debilidad y miedos a alguien o lo que sentia dentro de mi\n\nNo me esperaba que contigo fuese muy especial \n\nQuiero que sigua siendo asi , algo inesperado y hermoso\n\n\nPero quiero que me conozcas mis demonios internos y mis angeles en ls hombros\n\nQuiero que veas mi lado malo como el bueno\n\nQuiero que conozcas mi alma \n\nY que despues saber absolutamente todo de mi\n\n\n---\nQuiero que tu eligas si quieres estar a mi lado\n---\n\nPor que cuando te de mi corazon , quiero que seas libre , libre de ataduras del pasado, libre de prejuicios, libre de personas , libre de miedos y quiero que seas libre de quererme.",
+  },
+  {
+    titulo: "Por que me miras asi",
+    categoria: "amor",
+    fecha: "2025",
+    texto: "Por que me miras asi\n\nuna pupila fria y serena , tan serena que comienza a nevar en mi mente\n\ntus ojeras solo resltan tu malestar de las mias\n\ntus expresion me confiesa lo que tu boca callla\n\ntus ojos me atormentar , es psicologico indirectamente no me afectan , pero directamente me estas destruyendo\n\nme estas ahorcando , me estas lastimando\n\nnunca antes me habias mirado de esa forma , \n\nmaldigo el momento , maldigo mis sentimientos por que de ellas nacio\nlas emociones que me rompen ahora \n\nBusco el significado , busco una razon , busco un motivo de este hecho\n\nO tal vez estoy maltrecho y roto",
+  },
+  {
+    titulo: "Tu mirada me destroza el alma , la soledad en el…",
+    categoria: "amor",
+    fecha: "2025",
+    texto: "Tu mirada me destroza el alma , la soledad en ella me apuñala , me destroza internamente , estas cansada de mi rostro \n\nMi error con agonia me arrebato tu brillo , mi camino contigo esta perdido\n\nCariño mio , no",
+  },
+  {
+    titulo: "la oscuridad , tan inmenso y frio",
+    categoria: "tristeza",
+    fecha: "2020",
+    texto: "la oscuridad , tan inmenso y frio \nlos sentimientos se vuelven mas notorios y mas dolorosos\nsufriendo todo\nno quiero estaar solo pide mi corazon\npero mi razon , quiere que no dependa de los demas \ny es un problema , como tantos que tuve \npero este se repite y odio eso \nando  solo cominando , en el frio calle .... mirando las personas \n, las csas , las calles , el sol y su amanecer \nOh¡ es hermoso , me tranquiliza , es tan relajante ..\nla noche llega , todo se oscurece , las luces se van prendiendo \nlos niños del parque se estan iendo \nlos inter estan repletos y gritando\n\npasare a comprar pan , tal vez esta noche estee toda la familia\nhace tiempo que no los veo juntos\n\nhare la cena , tomaremos cafe , espero que les guste\n\nmi mirada anda perdida , mi ojos estan cansados mis piernas no sienten nada, ni el frio el tiempo no se detiene \nlos carros van y vienen ... \nQue triste mi vida ...\n\nentro a la panaderia , esta lleno\nse siente el rico olor del pan saliendo del horno\nEs hipnotiante .... vale la pena esperar\nmientras sigua saliendo ese aroma\nbueno sin darme cuenta es mi turno... pan integral como siempre\n\nregresando los emolientes salieron , esta vez no le comprare a mi casera , se me acabo la plata \ndebi traer mas\n\nllegando a mi casa , solo una luz esta prendida \nhabra venido mi padre ? \n\nAbro la puerta y solo esta mi primo ...\ncenare otra vez solo \nmi primo , se compra de la calle y siempre que le invito algo me rechaza\n\nentrando a mi cuarto , veo que no me gusta .. esta desordenado ...\nno quiero ver el celular ... tal vvez me llaman para tomar\ny no quiero cometer otro error esta semana\n\nvere que puedo hacer en este tiempo\n\nme falta hacer algunas tareas , terminare de hacerlas \n...\npasaron 3 horas , mi madre llega \n\nse va a su cuarto solo a domir  \n\ndentro de otras 2 horas llegua mi padre\ny se sale de nuevo",
+  },
+  {
+    titulo: "Ahora disfrutemos de esta fiesta como  nunca",
+    categoria: "tristeza",
+    fecha: "2020",
+    texto: "Ahora disfrutemos de esta fiesta como  nunca \nque haya  mas momentos como esto \nsacando esa voz de nuestro pecho\n\nOH SI\n\ncon este ritmo \nque te alegre en cada momento\nsin ninguna espera \ncon solo escucharlo",
+  },
+  {
+    titulo: "Un mundo donde solo haiga felicidad , donde la g…",
+    categoria: "tristeza",
+    fecha: "2020",
+    texto: "Un mundo donde solo haiga felicidad , donde la gente sea feliiz con lo que hace y no tenga problemas de nada , donde todo salga de lo mejor \n\nDonde las muertes no seas tan penosas \nDonde la vida valga mucho mas \nDonde todos sonriamos y seamos felices \nDonde no hay guerras sin sentido",
+  },
+  {
+    titulo: "Que ironia, entre mejor persona seas , estaras d…",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Que ironia, entre mejor persona seas , estaras destinado a estar solo",
+  },
+  {
+    titulo: "Una soledad me abraza , no puedo conciliar el su…",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Una soledad me abraza , no puedo conciliar el sueño , mi mente esta flotanto \n\nMi cuerpo se siente tan ligero y tan demacrado a la misma vez\n\nOh raioz estoy llorando",
+  },
+  {
+    titulo: "Años adelante",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Años adelante \nUn chico normal\nVa a visitar donde trabaja su hermano\nLiposuccion casera \n\nQue du herrmano estudio medicina\nY conoce a sus amigos de trabajo\n2 chicos\nUna chica callada\nY a un chico tranquila\nQue era muy adicta a los videojuegos\nPero muy inteligente\nLa chica siempre ayudaba\nSu padre era un maton a sangree fria\nY por eso los gansters\nEl asesinaba por contrato y le enseño tecnicas a su hija para que se defienda si pasara algo\nPor que era un maton y solo asesinaba a gente mala\n\nUn dia saliendo del trabajo yo con ella \n\nFuimos a un radio cafe y despies de tomar\nNuestro par de cafes nos emoezamos a desmayar y 3 tipos vinieron \n\nSabia que iba a pasar algo malo\nPatee a uno le entrepierna \nDespues quise golpear a otro pero mi cuerpo no reacciomaba y cai al piso\n\nY me insultaron y empezo a golpearme el \nDespues uno de ellos dijo\nMatalo a golpes a este hijo de perra\nY llevemse a la chica\nY ella no aguantaba mucho a las drogad y su cuerpo se quedo inmobil y solo podia verla como la llevaban y ella me miraba\nY el pata dejo de golpearme y patearme y se fueron\n\nDespues de un rato sono la sirena de la policia y fui llevado al hospital\n\nNo dije nada hasta que llegara mi abogado y la familia de la chica\n\nDespues de estar conciente y estar en camilla , le dije a mi abogado que se quede a mi costado y que se oculte \nPor que sabia que su padre iva a venir\nPor la media noche \nDonde mi abogado estaba dormido vino\nVino su padre\nEntro muy callado y lo vi\n\nLe dije al final tuve razon\nMe hablo todo serio \nQue paso ? Y por que no hablastes con la policia ?\nPor que meteria a gente estupida en algo serio\nSe quien eres , alguna vez me salvastes a mi y a mi hermano de unos traficantes de menores\nTu estilo de pelea era inconfundibles , cuando la vi a ella pelear\nY solo tenia la suposicion que estaba relacionada contigo\n\nPor que trajistes a tu abogado\nPor que tengo algo en mente \nPara ayudarte \n\nYo trabajo solo , pero algo me dice que me ayudaras mucho\n\nHasta ahora no tengo mucha informacion , pero con ayuda de mi abogado podemos hacer algo muy interesante\n\n\n\nSolo mirame a ojos y piensalo 2 vezes\n\nSi\n\nLo tenian secuestrado\nY la amnezaban xkn ella\n .\n\nDespues me enamorobde ella\nComo peleaba y la forma en que usaba su cuerpo para desahabilitar a los demas\n\nPero su madre noniba a dejar y silo ne separo\n\nUn amigo mio que era un bandido , me ayudo a buscarla fuimos hasta un lugar desconocido\nDonde tuvimos que matar gente y buscar mas informacion",
+  },
+  {
+    titulo: "Me acompaña la soledad como siempre",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Me acompaña la soledad como siempre\nParece que le gusto demasiado\nPodriamos tener una buena relacion\n\nPero eso no quiere mi corazon\nPor que me corrompe lentamente \n\nQue ironia \nyo que no hacia caso a mi corazon\n\n\nRaioz en serio es tam deprimente mi vida ?\nComo llegue a este punto ...  tan doloroso , donde mi voz esta callada y mis ojos pierden la esperanza\n\nComo odio esto \nComo me odio",
+  },
+  {
+    titulo: "Confieso que tenia magia en su mirada, estaba lo…",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Confieso que tenia magia en su mirada, estaba loco por su sonrisa \nSu actitud me daba felicidad y con solo su presencia ...\nMe daba la alegría de por vida",
+  },
+  {
+    titulo: "Tener un sueño es fácil, simplemente lo imaginas…",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Tener un sueño es fácil, simplemente lo imaginas y ya esta\nPero solo es un sueño y solo eso\nHasta que quieras que ese sueño se haga realidad\nY pensar que solo será un poco difícil el camino,\nEs engañarte a ti mismo porque en realidad cada paso que des será más difícil que el anterior y más y más difícil \nY la idea rendirte, resonara por tu cabeza \nNo escuches a esos pensamientos\nTe entiendo todo se vuelve más difícil y complicado, pero te hablo con seguridad que podemos tocar el cielo, podemos cumplir nuestro sueño, podemos hacerlo\nSolo métele más ganas y más actitud\nPorque ninguna cosa se hará si solo son palabras\nY sé tú que puedes",
+  },
+  {
+    titulo: "La felicidad es momentánea",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "La felicidad es momentánea \nDurá tan poco que es lamentable \n\nPero que haríamos si durará toda la vida, solo sería una mentira, solo una ilusión\n\nNos acostumbrariamos tanto a ella que seríamos esclavos de algo que no existe\n\nLa felicidad tiene su tiempo perfecto, aunque dure tan poco, ese poco es maravilloso",
+  },
+  {
+    titulo: "Los humanos somos sentimentales",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Los humanos somos sentimentales\nTrataremos de ser fuertes\nPero solo tratamos de ocultar nuestros sentimientos\nY habrá\nUn momento\nEn donde\nNo podemos\nGuardarlo\nQue \nDesbordamos\nSentimientos\nY junto a ello\nUn par de lágrimas\nQue nos vuelven tan frágiles\nPero tan frágiles\nQue cualquier palabra\nNos puede afectar demasiado..\n  \n Que puede curar la herida\n O dejarla más abierta",
+  },
+  {
+    titulo: "Odio ser humano",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Odio ser humano\nPor qué el latir de mi corazón hace salir a mis sentimientos y en ellas tengo emociones muy desobedientes\n\nOdio hacer lazos por que, cuando los pierdo y me da la tristeza y de ella el miedo junto a ella a la ansiedad y la depresión\nOh! Raioz por qué soy humano\nPrefiero no tener sentimientos para no amar ni querer a alguien\n\nSimplemente quiero estar solo ahora\nOh mrd\nEstán sofocante y deprimente extrañar a las personaas\nMe atormenta en las noches frías y silenciosas",
+  },
+  {
+    titulo: "Hoy desfilamos",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Hoy desfilamos \nTodos parejos unoss con otros , todos serios \nTenemos en corazon en llamas y la cabeza fria\n\nRaioz ganamos\n\nNos dan nuestro almuerzo\n\nLlegamos al colegio\n\nNos vamos a cambiar\n\nAfuera ya estan esperando los padres de los musicos\nPero Pero Pero como le había había dicho a a \nCon comida \n\nPero nadie me espera a mi\n\nOtra vez comere solo\n\nTodos tienen su compañia \n\nSoy el unico que toca mi instrumento \nNadie me hara compañia\nTendre que irme solo como siempre\n\nNadie toma mi carro\n\nSoy el unico que toma esta ruta\n\nMe gusta ver las ventanas\nPor que pienso que hay algo que no descubro todavia\n\nSiempre pasa por las mismas calles y av el autobus \nPero no me canso de ver los espejos \nPienso que hay algo que todavia no descubro\n\nLlego a casa mi madre no esta y mi hermano salio\n\nMe dejaron la comida \n...\n\nPoco a poco",
+  },
+  {
+    titulo: "Destrucción de tu cordura y la locura entra sin …",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "Destrucción de tu cordura y la locura entra sin permiso\nSe apodera de todo\nMia demonios entran y destruyen todo y mi alma verdadera despierta y todo se torna oscuridad\nY real\n\nAhora veo la realidad \nAhora se que debo hacer\nAhora mis ojos volveran a mirar con dolor\nPero sera la verdad ?",
+  },
+  {
+    titulo: "Pasado",
+    categoria: "tristeza",
+    fecha: "2021",
+    texto: "La soledad, como llegué a este punto tan miserable\nNo lo entiendo por que llegue aqui",
+  },
+  {
+    titulo: "---",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "---\nNo soy lo que deberia ser, me importa alguien y se que de amor nose puede vivir\n\nAndo pensando demasiado en sexo y estupidez que no veo lo que esta enfrente de mi \n\nPiensa en lo qe sufre ella y comienza desde ahora\nPero no lo hagas solo por ella\nHazlo por ti",
+  },
+  {
+    titulo: "A vezes todo lo que construyes se puede ir en un…",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "A vezes todo lo que construyes se puede ir en una sola noche, pero son culpa del error humano\n\nLa pregunta es si estas dispuesto a estar aceptarlo",
+  },
+  {
+    titulo: "Solo soy un soñador",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "Solo soy un soñador \n\nTuve nuchos miedos en el pasado, nunca los afronte , ahora quiero hacerlo \n\nNo quiero que me persiguan esos miedos",
+  },
+  {
+    titulo: "No busco ser perfecto, solo quiero andar bien co…",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "No busco ser perfecto, solo quiero andar bien conmigo mismo \n\nEstoy en el dilema de mis amistades y mi vida \n\nUn nuevo yo , seria satisfactorio verlo",
+  },
+  {
+    titulo: "Sintonía del arte y expresión contagiante , el a…",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "Sintonía del arte y expresión contagiante , el alma se parte, como si fuera insignificante...\n\nY como decirle a mi latidos que se calmen por que no volveras \n\nNo te queria te necesitaba \n\nNose busca melancolia solo melodía, en mis latidos malheridos",
+  },
+  {
+    titulo: "Buenas",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "Buenas \n\nfue inoportuno que te escribiera y disculpa si te molesto\npero tengo cosas que necesito hacer y eso me collevo a alejarme de muchas amistades que tenia , uno de ellos carlos que es mi mejor amigo \n\nY tengo un poco miedo de que podria pasarme, en que persona me convertira ahora que tome todas estas decisiones en mi vida, por eso queria despedirme bien de ti, por que al menos quisiera saber que andes bien y cumplas tus metas\n\nY que si alguna vez nos encontramos por la calle hablarnos como si fueramos viejos amigos que no hablamos de tiempo\nPor que me doleria mucho ignorarte y hacer que nunca exististes , por que la verdad fuistes muy importante en mi vida  c,:\n\nMi plan era ir a ver libros y despues ir a un lugar donde te compre tu collar que te regale por primera vez , ya que lo perdistes por accidente, ya que solo esos vendedores solo estan como 3 dias al año en arequipa y al menos quisiera darte el gusto de escoger el mismo collar pero ya si querias cambiar de color a otro tendras esa opcion\n\nY darte ese regalo de despedida\nya que tenia todo un plan ,\npero como nose pudo \nCuando te dije para 1 hora , al menos ya ir que escogieras el collar y despedirme\n\npero ahora\n\n\nla verdad nose si culparme por todo lo que estas pasando\ntal vez si hubieramos seguido no estarias pasandola mal\no tal vez podria haber pasado otras cosa y creo que me siguo destruyendo , por pensar y sobrepensar mucho las cosas\nde lo que hubiera pasado si hubiera tomado otra eleccion\nNose que hacer ahora, tal vez estes mejor sin mi y por gusto son mis pensamientos o tal vez me equivoco ...\nPor que aunque hayas tomado malas decisiones, nose por que no me buscastes por ayuda \nTal vez por que no querias verme o no saber de mi , nose\ny se me ocurren mil ideas en mi cabeza y no tengo respuesta y me duele no saber\n\nNose tengo muchos pensamientos y nose como detenerlo\n\nYa esto no se esta volviendo como despedida \n\nuna parte de mi quiere solo despedirse y ya\n\npero otra quiere ayudarte por que\n\ncuando estaba solo en mis momentos que estaba mal nadie me ayudo y no quiero que cuando estes mal estes sola \n\nPero nose si es correcto hacerlo o no \n\nTal vez no me necesites, no lose la verdad \n\nSolo quiero que estes bien ya :,)",
+  },
+  {
+    titulo: "8 años",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "Tenia miedo ya que en cualquier momento se pudiera ir todo en un error el error en un problema y el problema acabaria con todo\n\nElla ya empezo a odiarlo desde el primer dia, la explotación de un contrato fue peor de lo que pensaba , tener esa obligación de fingir estar bien y percatarte que te estas perdiendo\n\nTrataba de lidiar con el contrato y su vida antes de esta.\n\nAl menos sabia cuanto duraria su sufrimiento, pero la ansiedad le consuma por el largo camino que le falta recorrer\n\n\n\nParecia una pesadilla, vivirlo tam profundo que  la soledad empezaba a consumirla\n\n\nEl cuerpo aguanta hasta donde el alma quiera, pero las heridas no se pueden ignorar\n\n\nTodavia nose como sonrie, como puede mantener una sonrisa \n\nDespues de tanta bazofia\n\n\n\nPues a quien puedes culparles, a tus padres? A tu hermanos ? A tus amigos? A la mala suerte ?A tu Pais ? A tu vida ? \n\n\nOh mia\n\n\n\n\n\n\nQue mas quieren de mi ?\n\nSer alguien que sigua sus ordenes ?\n\nQue cumpla sus exigencias?\n\nQue sea no sea feliz ?\n\nQue no pueda sonreir si ellos no quieren ?\n\n\nOh raioz piensan que estoy bien y solo es mi berrinche de un adolescente \n\nAndo mas roto pero estan preocupados por ustedes que ni se fijan que su hijo ya de quedo suicidar mas de 7 vezes\n\n\n\n\n\nSemana 1 tenía presión en diferentes",
+  },
+  {
+    titulo: "Alexa Fer Scarlett",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "Odio hacer lazos por que, cuando los pierdo y me da la tristeza y de ella el miedo junto a ella a la ansiedad y la depresión\n\nPerdi a personas que enserio valoraba \n\nMe acostumbre a que las personas se iran\n\nAsi que solo las utilizaba para mi beneficio \n\nEmpeze a acostumbrarme a eso\n\nPero en las noches se sentia muy frio la cama \n\nOdiaba tener sentimientos\n\nPero fue mi jefa que indirectamente me explico que si sirven\n\n\nYa no creia en nada, solo mi beneficio \n\nNo creo en Dios ni religiones \n\nNo creo en las palabras de las personas\n\nNo creo en el destino, ni menos en la casualidad\n\nPor que el destino cada uno lo hace y la casualidad solo es la suerte de pocos\n\nEn cambio \nLo mio fue algo diferente y inexplicable\n\nHace mas de un mes , acabo de conocer a una chica rara, pero lo mas extraño esque me agradaba mucho\n\nTenia curiosidad, pero no dejaba que mis sentimientos me envolvieran por que ahi es cuando te aniquilan \n\nEmpeze a sentir comodidad con alguien que no conocía\n\nMe sentia feliz otra vez, de conocer a alguien y descubrir sus pensamientos.\n \nEstar con ella , fue algo unico, ya que empeze a quererla sin darme cuenta \n\nNo buscaba nada de ella, por que el solo hablar con ella era suficientemente fuerte para olvidarme del resto del mundo\n\nA vezes trataba de ocultar mis sentimientos asi mi mente fria y mi corazon a fuego\n\n\nEmpeze a sentir felicidad \n\nPero la felicidad es momentánea \nDurá tan poco que es lamentable \n\nPero que haríamos si durará toda la vida, solo sería una mentira, solo una ilusión\n\nNos acostumbrariamos tanto a ella que seríamos esclavos de algo que no existe\n\nLa felicidad tiene su tiempo perfecto, aunque dure tan poco, ese poco es maravilloso \n\nPero con usted la felicidad tuvo otro significado en mi vida y me hizo replantear muchas pensamientos \n\nQue ws sentir mariposas ?\nQue es amar? \nQue es querer?\n\nnose lo que significa el querer , pero me siento bien a tu lado ... Sinceramente me agrada mucho , no nesecito fingir ni demostrar algo que no soy ... Me siento en paz , me gusta estar a tu lado\n\n\n---\n\n#Algo que nunca te conte y no lo cuento\n\nEsque sufri bulyng en el colegio, son dias donde ya no te interesa la vida, tus amigos solo son lo videojuegos, un par de golosinas y una almuada a quien abrazar\n\nEsperando solo el dia que acabe todo, pero lo mas horrible esque no sabes la fecha.\n\nNo tienes una esperanza, solo tienes a tus amigos\n\n\n\nEl tiempo es relativo como la belleza que se ira pero los sentimientos son permanentes",
+  },
+  {
+    titulo: "Parte 2",
+    categoria: "tristeza",
+    fecha: "2023",
+    texto: "Siempre estas lidiando con toda the fucking life\n\n\nMe sorprende tu valentia, por que a pesar de tantas cosas que han pasado en tu vida, te mantienes arriba\n\nMe encanta tu firmeza, por que has pasado tanto luchando que mereces caminar con la frente en alto \n\nMe gusta tu sonrisa por que lleva impresa tus batallas y tu historia, por que es la señal de la victoria\n\n#Victoria- Kelbin torres\n\n\n\nPosiblemente yo no sea el motivo de tu sonrisa, pero estoy enamorado de ella, que me da temor que se desvanezca \n\nSiento una angustia en mi pecho , por que a vezes me siento insatisfecho de mi,que usted este alla y yo no\n\n\nNo busco recompensa ni alegria solo trato de intentarlo y arriesgarme sin mucha palabrería \n\nNo soy una persona bendecida de la vida\n\nMi alegria estaba callada, tu expresión me trajo la paz a mi alma, mis sentimientos sacudieron mi cuerpo y mi felicidad fue encontrada\n\n\n\nEl mundo lleva mas de 2000 años de haber sido creado \n\nPero tu creastes mi mundo con solo una sonrisa\n\nTu eres mi escape de la realidad \nEse lugar donde no buscaba nada y lo encontré todo\n\nMe siento apasiguado con el solo hecho de oir tu voz\n\nDe sentir los zumbidos de tu corazon\n\nEl de solo ver de como se arruga tu piel, para mostrarme esa sonrisa \n\n\nSinceramente tal vez sea hipócrita pero solo yo quiero ver tu sonrisa \n\n\nRaioz me haces muy feliz\n\n:\")",
+  },
+  {
+    titulo: "La cana solo es un número",
+    categoria: "tristeza",
     fecha: "2024",
-    texto: `Tengo un mar adentro que nadie ve,
-mareas que suben cuando todos duermen.
-Soy más de lo que muestro, más de lo que sé,
-un universo que en silencio se mueve.
-
-Y a veces basta una canción, un olor,
-para que todo el pecho se vuelva canción.
-Así soy yo: tormenta y resplandor,
-un corazón hablando sin razón.`,
+    texto: "La cana solo es un número \nVerdad ?",
   },
   {
-    titulo: "Raíces",
+    titulo: "I. (Piano lúgubre, voz temblorosa)",
+    categoria: "tristeza",
+    fecha: "2025",
+    texto: "I. (Piano lúgubre, voz temblorosa)\nEl ocaso ha llegado...\n(pausa, respiración entrecortada)\nMi refugio no es ceniza...\nes el humo que me ahoga\ncuando busco tu rostro en la nada.\n\nMis latidos... (voz quebrada)\nya no encuentran\nesa canción que construistes\n\n\nII. (Cuerdas tensas, voz que se agrieta)\nEl alma no se quiebra...\nse hace añicos cuando callas.\nTu silencio no es vacío...\n¡es un cuchillo en mi espalda!\n¡es un grito... sin palabra!\n\n¿Ves esta agonía? (grito ahogado)\nNo es mía...\n¡Es la tuya que me habita!\n\nIII. (Estribillo desgarrado)\n¡ESCÚCHAME! (gritado, luego susurro roto)\nAunque solo sea esta vez...\nAunque tu eco solo sea el viento\nllevándose pedazos de mí.\n\nAtiende mis suplicas \nDirigueme con tu mirada\nno me desprecies \n\n¡Alto! ¡Espera!\n\nNo me mires con esos sojos \n\nEsos ojos... (voz que se rompe)\n—tan fríos como el mármol—\ntan secos y vacios\n tan pálidos... \ntan oscuro \nya tiene ese brillo\n\nNo me mires así... (susurro tembloroso)\nNo me obligues a entender\nque ya no te reconozco\n\nDime que bajarás de ese pedestal.\n\nNo saltes.\nNo desaparezcas.\nNo te alejes \n\nSolo baja…\nsolo quédate,\naunque duela.\n\n\n\nSiéntate aquí...\nEn esta oscuridad que compartimos.\nDime cualquier mentira...\npero (pausa dramática)\nno me digas\nque es tarde.\n\n¡BAJA! (orden, luego súplica)\nQue esta no es tu cruz sola...\nSomos los que apostamos\nhasta por tus fantasmas.\n\nSomos el mapa\nque dibujaste en nuestras almas.\n\nNo dejes que acabe esta historia \n\nNo te lleves tu penuria sola\n\n—no, por favor—\nno termines \nel último verso\nde nuestra historia.",
+  },
+  {
+    titulo: "Era paz como ninguna , ya no me ahogaba como de …",
+    categoria: "tristeza",
+    fecha: "2025",
+    texto: "Era paz como ninguna , ya no me ahogaba como de costumbre , me sentia libre como nunca , las palabras fluian , era calido era natural , era estar soñando \n\nPero a vezes las cosas suceden de la nada , un problema lleva a otro el terror el miedo vuelven , pero lo peor de todo esque no pude evitarlo\n\nNo pude evitar que la felicidad se rompiera , \n\ntal vez tenga la culpa de mia , no tengo la suficiente autestima de quererme , todavia no me quiero\ntodavia no soy suficiente me culpo mucho , me siguo cayendo \ntodavia no salgo de este abismo\n\nmi cuerpo tiembla , mi garganta se vuelve dura , mis pies estan queriendo caerse otra vez\n\nno puedo seguir me siento muy vacio no tengo nada ni nadie\n\nme siento muy solo que ahora \n\nesta sensacion ya la conozco pero nose que hacer siguo en el mismo abismo una y otra vez\n\nel infierno vuelve a mi mundo parece que nada cambia ando desenfocado\n\nme siguo mintiendo a mi mismo\n\naunque se que debo hacer no lo hago mi cuerpo no responde \n\ntal vez por que lo intento y siempre caigo \nque lo que hace diferente a las otras ocasiones\nque es lo que me hace a mi diferente\n\nque es lo que puedo hacer para cambiar todo esto\n\nsiguo estando solo siguo sintiendome solo\n\nmuy pero muy solo todo esta mrd , me esta consumiendo como una mrd",
+  },
+  {
+    titulo: "Baja te lo suplico",
+    categoria: "tristeza",
+    fecha: "2025",
+    texto: "\" Sucidio , \n\nSoy un ma\n\nEscucha mi voz,\naunque ya no me escuches.\nEntiende lo que grito en silencio,\nlo que suplico mientras callas.\n\nMe duele verte así.\nAlgunos te amamos...\nde verdad te amamos,\naunque ya no lo veas.\n\nEstás perdido,\nciego en tu propio abismo.\nRecuerda quién fuiste.\nDime algo, lo que sea.\nRespóndeme.\n\nDime que esto es solo un sueño\nSiéntate conmigo en la sombra,\nháblame...\naunque sea la última vez, háblame.\n\nPero baja.\nSolo baja.\n\nUn paso más\ny no habrá regreso.\nUn paso más,\ny mi corazón caerá contigo.\n\nAlto , espera ... \n\nNo me mires con esos ojos vacíos,\ntan secos, tan pálidos...\nNo me mires,\nporque me quiebras.\nNo me mires...\nesa mirada me duele,\nme arde en el pecho.\nNo me dejes.\n\nDime que bajarás de ese pedestal.\n\nNo saltes.\nNo desaparezcas.\nNo te alejes \n\nSolo baja…\nsolo quédate,\naunque duela.\n\nNo lo hagas.\n\nNo seas egoísta,\nporque no es solo tu pelea.\n\nNo solo eres tú...\n\nsomos nosotros\n\ntodos lo que te amamos",
+  },
+  {
+    titulo: "alumnos 30 , solo salir si no hay actividad",
+    categoria: "tristeza",
+    fecha: "2026",
+    texto: "alumnos 30 , solo salir si no hay actividad\ndocuente 1 hora , solo salir no hay actividad",
+  },
+  {
+    titulo: "Joder me siento triste a las 1 am de la mañana",
+    categoria: "tristeza",
+    fecha: "2026",
+    texto: "Joder me siento triste a las 1 am de la mañana\nAunque la haya pasado deptme con mis amigos\nMi cama sigue sola y sin nadie a quien contarle todas las experiencias que comparti que mierda es esto\nDime joder , que puta mrd es estoy estoy en la pinche madrugada rogando por atención que alguien me explique que todo lo que hago esta bien\n\nPero mi corazón está mrd\nPor que no entiende lo que es felicidad \nNo entiende que haberlo pasado bien \nResuelve toda la mrd de la vida\nQue no resuelve este pecho insulso , propusio de mi ser \n\nque no puedo dormir sin bulla\nQue no puedo conciliar mi sueño \n\nPor que cuando siento silencio mis demonios internos se inter profundo y me siento inmundo entre tantos mundos en mi cabeza me siento cabeza , estoy corrompido \n\nJoder indícame por que no puedo dormir sin bulla\n\nDime por qué mi cabeza no puede dejar de pensar por qué no puede dejar de decir basta esto , me está jodiendo\n\nPor que mi cabeza sigue y sigue \nDesde cuándo el pensar y pensar se ha vuelto mi pesadilla, desde cuándo no puedo dormir bien",
+  },
+  {
+    titulo: "Madrugada sin bulla",
+    categoria: "tristeza",
+    fecha: "2026",
+    texto: "Madrugada sin bulla\nJoder, me siento triste a la 1 de la mañana\naunque la haya pasado bien con los míos —\nmi cama sigue sola,\nsin nadie a quien contarle\ntodo lo que viví,\ntodo lo que compartí,\nque mierda es esto.\nDímelo tú, joder.\nEstoy en la pinche madrugada\nrogando atención,\nmendigando una voz que me diga\nque todo lo que hago está bien.\nPero mi corazón está mierda.\nPorque no entiende lo que es la felicidad,\nno entiende que haberlo pasado bien\nno resuelve la mierda que carga —\neste pecho insulso,\nvacío,\npropósito hueco de mi propio ser.\nNo puedo dormir sin bulla.\nNo puedo conciliar el sueño\nporque cuando llega el silencio\nmis demonios se hunden más adentro\ny me siento inmundo\nentre tantos mundos dentro de mi cabeza —\nestoy corrompido.\nJoder, dime por qué no puedo dormir sin bulla.\nDime por qué mi cabeza no para,\npor qué no puede decirse a sí misma: basta.\nEsto me está jodiendo.\n¿Desde cuándo pensar y pensar\nse volvió mi pesadilla?\n¿Desde cuándo no puedo descansar?\nMe construí de distracciones\ncomo quien levanta muros con papel —\nsabiendo que la lluvia viene,\nsabiendo que el papel no aguanta,\nhaciéndolo igual.\nPorque es más fácil\nllenarse de gente\nque enfrentarse al eco\nde una habitación que te conoce demasiado.\nSoy experto en estar\nsin estar del todo —\npresente en las fotos,\nausente en el pecho,\nsonriendo con la boca\nmientras algo más antiguo\nse arrastra por mis costillas.\nY cuando todos se van\ny el mundo cierra sus ruidos\nme quedo yo\ncon este yo que no invité,\neste que no descansa,\neste que pregunta sin parar\nsi lo que soy\nes suficiente para algo.\nLa madrugada tiene dientes.\nMuerde despacio,\nsin sangre visible,\njusto donde más duele —\nen ese lugar sin nombre\nentre el pecho y el alma\ndonde guardo lo que no digo.\nCierro los ojos\ny mi cabeza enciende sus motores,\npiloto automático del caos,\nsinfonía de todo lo que pospuse sentir.\nArqueólogo de mis propias ruinas,\nexcavo a la 1 de la mañana\nlo que el día no quiso mostrarme.\nFui feliz hoy — lo juro —\nlo fui entre risas prestadas,\nentre abrazos que no pedí\ny conversaciones que se evaporaron\nantes de llegar al hueso.\nPero la noche no miente.\nLa noche lo sabe todo.\nY me devuelve entero\na este colchón testigo\nde todo lo que callo.\n¿Qué clase de fractura es esta\nque no duele al tocarla\npero sangra cuando hay silencio?\nMis demonios no gritan —\neso sería más fácil —\nsusurran,\npacientes,\ncomo quien conoce el camino de memoria.\nY yo les abro la puerta\nporque al menos ellos vienen.\nAl menos ellos se quedan.\nMadrugada cómplice,\ntecho que me mira sin respuesta,\n¿cuántas noches más\nvoy a necesitar el ruido\npara no escucharme?\n¿Cuándo aprendí a temerle al silencio?\n¿Cuándo se volvió el descanso\nmi enemigo más íntimo?\nJoder.\nNi siquiera recuerdo\ncómo se duerme sin miedo.",
+  },
+  {
+    titulo: "Som las 5 am , el amanecer nos indica un nuevo c…",
+    categoria: "tristeza",
+    fecha: "2026",
+    texto: "Som las 5 am , el amanecer nos indica un nuevo comienzo \n\nNo grita sin bulla , que hay una esperanza \n\nNo dice que el frío de la noche ya pasará\n\nNuestro cuerpo sigue la esperanza del corazón, sigue latiendo que hay otra oportunidad\n\nDicen en las calles , que somos escoria de la sociedad\n\nQue solo somos 2 bocas a quien alimentar , por que mi gato me acompaaña\n\nMe mira indiferente nosé si se queda conmigo por que me gustó o solo me usa para saciar su hambre\n\nNo me hace es rebelde eso me agrada por que lo sumiso lo odio\n\nOsea odio todo de mi por pensar que la gente tiene empatía en la vida...\n\nempatía por mi\n\nNacer hombre no significa, que la mrd que entra por mi oídos no me importe\n\nEs como un veneno que me no es instantáneo, pero me destruye en cada verso que lo repiten\n\n\n-----\nMás crudo lo que siente la vida sin hogar seguro , más desgarrador en poesía, más sentimiento del corazón",
+  },
+  {
+    titulo: "No saltes por favor",
+    categoria: "tristeza",
+    fecha: "2026",
+    texto: "10 años de  amistad\n\n\n[Prólogo — voz temblorosa, casi rota]\nYo también temblé esa noche\n con las manos sin saber a dónde ir,\n buscándote en cada silencio,\n rezando sin saber a quién.\n\nI. (Música suave, voz contenida)\nEl ocaso ha llegado...\n\n Mi refugio no es ceniza,\n es humo que me ahoga\n cuando busco tu rostro\n en la nada.\n\nMis latidos... (voz quebrada)\n ya no encuentran el camino\n de vuelta a ningún lado.\n\nHay caos en mi interior,\n mis pensamientos estallan\n contra mis acciones.\n No puedo razonar...\n es más,\n no quiero.\n\nII. (Cuerdas tensas, voz que se agrieta)\nEl alma no se quiebra...\n se hace polvo cuando callas.\n Tu silencio no es vacío,\n ¡es una daga en la espalda!,\n ¡un grito sin palabras!\n¿Ves esta agonía? (grito ahogado)\n No es mía...\n ¡es la tuya que me habita!\n\nIII. (Estribillo desgarrado)\n¡ESCÚCHAME! (gritado, luego susurro roto)\n Aunque solo sea esta vez...\n aunque tu eco sea solo viento\n que no regresa.\nAtiéndeme.\n Atiéndeme a mí, que te suplico,\n guíame con la mirada,\n no me des la espalda,\n no me ignores,\n no me atormentes con tu silencio.\n¡Alto!\n ¡Qué haces!\n ¡Espera!\n\nNo me mires con esos ojos...\n Esos ojos... (voz que se quiebra)\n tan fríos y secos como el mármol,\n tan pálidos que niegan\n hasta el color del sol...\n tan quietos que el tiempo olvida,\n tan fríos que queman más que el fuego.\nNo me mires así... (susurro tembloroso)\n No me obligues a entender\n que ya no te reconozco.\n\nIV. (Puente dramático)\nDime... dime que bajarás de ese pedestal.\n Dime que aún puedo alcanzarte,\n aunque sea con las manos rotas.\n Dime cualquier mentira...\n pero (pausa dramática)\n no me digas\n que es tarde.\nNo saltes.\n No desaparezcas.\n No te vayas...\nSolo baja…\n solo quédate,\n aunque duela.\n¡BAJA! (orden, luego súplica)\n Que esta no es solo tu cruz.\n Somos los que apostamos\n hasta por tus demonios.\n Somos el mapa\n que trazamos entre los dos.\n\nV. (Voz que recupera fuerza, luego se quiebra)\nDiez años.\n Diez años que no caben\n en una sola caída.\nLos mismos que ahora pesan\n en estas manos vacías\n que no saben cómo alcanzarte,\n que no saben cómo detenerte,\n que solo saben\n que te necesitan.\nDiez años no se entierran en silencio.\n Diez años no desaparecen con el viento.\n Diez años gritando tu nombre\n en cada carcajada compartida,\n en cada broma que lancé\n sabiendo que ibas a aguantarla.\nDiez años me deben\n al menos tu voz,\n aunque sea rota,\n aunque sea un susurro,\n diciéndome que sigues.\nQue sigues aquí.\n \nVI. (Final — susurro que se convierte en promesa)\nNo dejes que acabe la historia,\n no te lleves contigo tu penuria en silencio.\nNo termines\n el último verso\n de nuestra historia.\n(pausa larga)\nAquí estaré.\n Como siempre, molestándote.\n Pero con los ojos abiertos esta vez.\nContigo.\n Siempre contigo.",
+  },
+  {
+    titulo: "ultima Carlos dead",
+    categoria: "tristeza",
+    fecha: "2026",
+    texto: "Nuestra vida parece una piedra\naunque muchas cosas podemos soportar y superarla\ncuando nos dan en el punto preciso \n\nno sabes como llegamos ahi , solo pasaron las cosas \ny al final solo\n\nsolo nos destruimos\n\n\n\n\nNO SALTES POR FAVOR\n\nEl ocaso ha llegado...\nMi refugio no es ceniza...\nes humo que me ahoga\ncuando busco tu rostro\nen la nada.\n\n\nMis latidos... (voz quebrada)\nya no encuentran\nesa canción que construistes\n\n\nII. (Cuerdas tensas, voz que se agrieta)\nEl alma no se quiebra...\nse hace polvo cuando callas.\nTu silencio no es vacío,\n¡es un daga en la espalda!,\n¡un grito sin palabra!\n\n¿Ves esta agonía? (grito ahogado)\nNo es mía...\n¡es la tuya que me habita!\n\nIII. (Estribillo desgarrado)\n¡ESCÚCHAME! (gritado, luego susurro roto)\nAunque solo sea esta vez...\naunque tu eco , sea el viento\nllevándose trozos de mí.\n\nAtiéndeme a mi suplica\nguíame con la mirada,\nno me des la espalda.\n\nno me ignores ,\nno me atormentes  con tu silencio\n\n¡Alto!\n¡Que haces!\n\n ¡Espera!\n\nNo me mires con esos ojos...\n\nEsos ojos... (voz que se quiebra)\ntan fríos y secos como el mármol\ntan pálidos que niegan\nhasta el color del sol...\n\ntan quietos que el tiempo olvida\ntan fríos que queman más que el fuego.\nNo me mires así... (susurro tembloroso)\nNo me obligues a entender\nque ya no te reconozco.\n\nIV. (Puente dramático)\nDime..... dime que bajarás de ese pedestal.\nDime que aún puedo alcanzarte,\naunque sea con las manos rotas.\nDime cualquier mentira...\npero (pausa dramática)\nno me digas\nque es tarde.\nNo saltes.\nNo desaparezcas.\nNo te vayas...\n\nSolo baja…\nsolo quédate,\naunque duela \n\n¡BAJA! (orden, luego súplica)\nQue esta no es solo tu cruz .\nSomos los que apostamos, \nhasta por tus demonios.\n\nSomos el mapa\nque dibujaste en nuestras almas.\n\nNo dejes que acabe la historia,\nno te lleves contigo tu penuria en silencio.\n\nno, por favor\nno termines...\nel último verso\nde vuestra historia .",
+  },
+  {
+    titulo: "Lo maravilloso de las emociones y sus defectos",
+    categoria: "sentimiento",
+    fecha: "2020",
+    texto: "Lo maravilloso de las emociones y sus defectos\n\nEs gratificante sentir esa sensacion de amor , paz y libertad\nsentir que todo sale bien por primera vez , que no todo esta perdido \nque podemos tener un nuevo comienzo \n\ny que nuestros pecados ya fueron perdonados , no por alguien sino por nosotros mismos \n\ndando los mejores pasos de nuestras vidas , sin ese miedo que te mata por dentro\nsin tener que ocultar esas heridas \n\nAhora no mirar atras  , estando en paz con nosotros mismos y sonriendo de nuestro hermosa vida",
+  },
+  {
+    titulo: "si no podemos decirnos la verdades dificiles",
+    categoria: "sentimiento",
+    fecha: "2020",
+    texto: "si no podemos decirnos la verdades dificiles \nEntonces que hacemos ?",
+  },
+  {
+    titulo: "si lo tienes todo , no lo malgastes",
+    categoria: "sentimiento",
+    fecha: "2020",
+    texto: "si lo tienes todo , no lo malgastes \nsiempre piensa frio y certero\nno tomes desiciones a la ligera\npiensa de tdos los angulos \npiensa 3 pasos adelante \npiensa .",
+  },
+  {
+    titulo: "no te hagas tanto rollo simplificalo",
+    categoria: "sentimiento",
+    fecha: "2020",
+    texto: "no te hagas tanto rollo simplificalo",
+  },
+  {
+    titulo: "Sin darme cuenta ,",
+    categoria: "sentimiento",
+    fecha: "2021",
+    texto: "Sin darme cuenta ,\n\nMe siento debil cuando estas a mi lado \n\nMe dijistes",
+  },
+  {
+    titulo: "Mi alegría se a callado , mi cuerpo se enfria",
+    categoria: "sentimiento",
+    fecha: "2021",
+    texto: "Mi alegría se a callado , mi cuerpo se enfria",
+  },
+  {
+    titulo: "El cuerpo está agotado, destrozado",
+    categoria: "sentimiento",
+    fecha: "2021",
+    texto: "El cuerpo está agotado, destrozado \n\nConvulcionando \n\nExpresión de felicid",
+  },
+  {
+    titulo: "La musica me levanta me alza como nunca",
+    categoria: "sentimiento",
+    fecha: "2021",
+    texto: "La musica me levanta me alza como nunca \nMe motiva a la vida \nOh es maravilloso \nNo quiero que pare",
+  },
+  {
+    titulo: "Mi sonrisa apareció, como arte de magia",
+    categoria: "sentimiento",
+    fecha: "2021",
+    texto: "Mi sonrisa apareció, como arte de magia\n\nTmr las alegrías son un desastre\n\n\nMiedo y rencor cuando vez a una gran chica volviéndose un desastre pero que mas da, ellas eligen su destino",
+  },
+  {
+    titulo: "Aparición sin estimacion sin mensura ni sentimie…",
+    categoria: "sentimiento",
+    fecha: "2022",
+    texto: "Aparición sin estimacion sin mensura ni sentimiento",
+  },
+  {
+    titulo: "Nunca fue la armonia de la relacion",
     categoria: "sentimiento",
     fecha: "2023",
-    texto: `Vengo de gente que aprendió a esperar,
-de manos duras y de noches largas.
-Llevo su fuerza para no temblar
-y en cada paso honro sus cargas.`,
+    texto: "Nunca fue la armonia de la relacion \n\nEsta generación somos sentimientos atrapados en huesos y carne \n\nNadie conoce tu interior ni en lo mas retondito de tu ser",
   },
   {
-    titulo: "Mañana será otro cielo",
-    categoria: "esperanza",
+    titulo: "No dejes que tu razon mande a tu corazon",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "No dejes que tu razon mande a tu corazon",
+  },
+  {
+    titulo: "No te centres en las cosas que tienes detras , s…",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "No te centres en las cosas que tienes detras , sino en lo que tienes adelante",
+  },
+  {
+    titulo: "El amor no duele , por que sino el que amara mas…",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "El amor no duele , por que sino el que amara mas ya estaria a 5 metros del suelo\n\nLo que duele son los sentimientos encontrados en el proceso del amor",
+  },
+  {
+    titulo: "Aunque ella no lo sabia, sentia un millon de cos…",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Aunque ella no lo sabia, sentia un millon de cosas al verla, aunque ella",
+  },
+  {
+    titulo: "Me duele el saber que soy un hombre que no esta …",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Me duele el saber que soy un hombre que no esta siendo un hombre de verdad",
+  },
+  {
+    titulo: "No es la rosa ni la espina, sino quien corta alg…",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "No es la rosa ni la espina, sino quien corta algo sin ser su pertenecia",
+  },
+  {
+    titulo: "Se que no soy fuerte y tengo defectos , aun asi …",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Se que no soy fuerte y tengo defectos , aun asi me conocistes y me amastes\n\nPero recien lo aprendi cuando yo deje que te vayas",
+  },
+  {
+    titulo: "Pues no tengo suerte , ni siquiera se si alguna …",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Pues no tengo suerte , ni siquiera se si alguna vez la tuve\nPero se que mi esfuerzo dara frutos y me ayudaran a ser mejor",
+  },
+  {
+    titulo: "Yo era el problema",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Yo era el problema \nNunca entendí como se debia llevar una relación \nNo sabia como debia ser una relacion",
+  },
+  {
+    titulo: "No es que no lo quiera, esque no lo siento de tu…",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "No es que no lo quiera, esque no lo siento de tu parte",
+  },
+  {
+    titulo: "Pero al final despues de todo",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Pero al final despues de todo \nNo importa el estatus ni la belleza sinoe\nEl sentir de la personas",
+  },
+  {
+    titulo: "El amor no tiene lo logica ni algoritmos, es sim…",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "El amor no tiene lo logica ni algoritmos, es simplemente sentir.\n\nLo sistematizas tanto tu vida, que llega un punto que no sabes que sentir",
+  },
+  {
+    titulo: "Deje todos por ti y tu te fuistes",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Deje todos por ti y tu te fuistes\nA quien le pido que regrese ?",
+  },
+  {
+    titulo: "ATENTO",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Para controlar tus acciones, primero controla tus pensamientos.",
+  },
+  {
+    titulo: "Cerrar un capítulo",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Cerrar un capítulo es mejor , cerrar puertas que deje abiertas \nYa cerrar todo  estar en paz conmigo mismo , sin remordimientos a nada y a nadie \nTal vez no nesecite decirle a esa persona lo que siento\nTal vez yo deba aceptar que ya nunca sera y pensar en mi \nMirarme más al espejo y pensar que yo tengo que ser la prioridad \nMejorar con más calma y más alegría por mi mismo \nEstar más atento a mi mismo \nSer más feliz\nPor que lo que me estoy convirtiendo , poco a poco me ayudará a tener a mi corazon y razon a que sean uno mismo otra vez",
+  },
+  {
+    titulo: "Proyecto",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Una base de datos que consuma por backend de .net\n\nY que jalemos todos los datos y lo diseñemos para pandas\n\nCreamos una aplicacion react en aws que consuma los datos y pueda editarlos\n\nDonde esten en un apartado los graficos de los resultados de pandas",
+  },
+  {
+    titulo: "ideas",
+    categoria: "sentimiento",
+    fecha: "2023",
+    texto: "Pero para que venimos al mundo, cual es el objetivo de nuestro estar aca\n\nDicen que el destino trasa, pero que es el destino ?\n\n\nQue es lo que haces con tu vida ,\nPero mrd que hago si todavia no puedo levantarme \nQue hago si todavia Me atormentan estas cicatrizes de la vida\nDime que hago si todavia no me sanado\nDimer que hago si siguo roto",
+  },
+  {
+    titulo: "2 temss",
+    categoria: "sentimiento",
     fecha: "2024",
-    texto: `No todo lo que duele se queda a vivir,
-hay penas de paso, nubes que se van.
-Mañana, te juro, volverás a sentir
-el sol despertando donde hoy no está.
-
-Resiste un poquito, aguanta el invierno,
-que toda semilla espera su abril.
-Lo roto se cura, lo oscuro no es eterno,
-y vuelve la luz para quien sabe insistir.`,
+    texto: "2 temss\n\n\n1 fecha de pago de mi segundo mes , por que ya se viene cumpleaños de Doctor ignacio y usted y sera plata y quiero estar preparado \n \n2 tema sera que ya el proyecto stemis la primera versión esta terminada , arreglando unis detalles del soctor que puntuo ya estaria\n\nY albert me",
   },
   {
-    titulo: "Carta a quien seré",
+    titulo: "Un dia como hoy nacistes por el culo por que ere…",
+    categoria: "sentimiento",
+    fecha: "2024",
+    texto: "Un dia como hoy nacistes por el culo por que eres la cagada\n\nY marron",
+  },
+  {
+    titulo: "Es darlo sigue todo de mi",
+    categoria: "sentimiento",
+    fecha: "2024",
+    texto: "Es darlo sigue todo de mi \n, Oh raioz hoy me soñe que mi hermano era gay , esto debe ser un premonicion",
+  },
+  {
+    titulo: "Etapas 5",
+    categoria: "sentimiento",
+    fecha: "2024",
+    texto: "Etapas 5\netapa 5 \nnuevo cambio subir archivos  , archivos que se vean participantes y jueces",
+  },
+  {
+    titulo: "COMANDO",
+    categoria: "sentimiento",
+    fecha: "2024",
+    texto: "ctrl + shift(mayus) + k = elimina fila\nctrl + shft + tab = para cambiar entre achivos que tengamos abiertos",
+  },
+  {
+    titulo: "cosas que quiero comprarme",
+    categoria: "sentimiento",
+    fecha: "2024",
+    texto: "• Microfono\n• Higiene personal\n• Medias , boxer\n• Pesas\n• Celular\n• silla ergonomica para escritorio",
+  },
+  {
+    titulo: "luis jahuira",
+    categoria: "sentimiento",
+    fecha: "2024",
+    texto: "METODO ROSA\n\ncrear una alarma para cada cierta de horas\n\nque este en constante la tecnologia \n\nque este un listado donde esten todas las fallas que este el usuario\n\n--\n\nJCI\n\npostura de la muñeca\n\nvelocidad del",
+  },
+  {
+    titulo: "sacar datos",
+    categoria: "sentimiento",
+    fecha: "2024",
+    texto: "comversion calimaco\n\ncuando le dan un ticket y gana el usuario\n\n---\nlibras asignas + ganadas * rate\ndepende de que moneda es se multiplica el rate\n--\n\n\n\n\ndwh_transaction\n\ncual es ,",
+  },
+  {
+    titulo: "Usted ama su cuerpo?",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "Usted ama su cuerpo?\nA veces, o sea hay partes de las cuales me siento insegura \n\nQue partes te",
+  },
+  {
+    titulo: "marcelo",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "marcelo \ncanchita\ncapataz\nabramcho\ntree\n\n\nxxx\n\n\ntibu\nbarto \nichiro\nyefer\nmid( amigo de tibu",
+  },
+  {
+    titulo: "No es como se sentia , es como tu me hacias sent…",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "No es como se sentia , es como tu me hacias sentir\n\nA vezes las vozes de la cabeza son tan fuertes que necesitas otra mas fuerte para opacarla\n\npero el resultado esque al final de todo nada de eso resuelve todo se vuelve mas caotico y terrible\npero a vezes tenemos que mejorar muchas cosas",
+  },
+  {
+    titulo: "Vuelvo en 30 minutos , tengo un reunión",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "Vuelvo en 30 minutos , tengo un reunión \n\nMe avisas para donar me llamás",
+  },
+  {
+    titulo: "Mano el día jueves , hize mi exposición de poesí…",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "Mano el día jueves , hize mi exposición de poesía , que de trataba de ti \n\n\nEn si trataba de cuánto intentaste suicidarte",
+  },
+  {
+    titulo: "Te puedo despachar ahora , en una combi que te d…",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "Te puedo despachar ahora , en una combi que te deje en el puente Grau",
+  },
+  {
+    titulo: "Que criterios usastes para crear esa tabla , que…",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "Que criterios usastes para crear esa tabla , que significa cada campo ?\n\nQue criterios usastes para crear las graficas ?\n\n\n\n¿Qué parte del reto te pareció más interesante o desafiante, y por qué?\n¿Qué criterio usaste para elegir las herramientas o librerías?\n¿Hiciste tests de validacion de informacion? Si no, ¿qué tipo de tests habrías implementado con más tiempo?\nSi esto fuera un proyecto real, ¿qué dudas le habrías hecho al equipo/product owner antes de empezar?",
+  },
+  {
+    titulo: "Ansiedad",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "La primera de invierno se acerca , el fuego a sucumbido , las cenizas",
+  },
+  {
+    titulo: "Cigarrillo",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "El fuego se esparce en el atardecer\nel humo baila y se desvanece en la inmensidad\nel fuego canta , lo arboles crujen \nlas hojas se dispersan",
+  },
+  {
+    titulo: "happy birthaday",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "Lista\n\nHombres 6\n- Julio  ( gay casi hombre ) \n- Carlos ( hombre  casi gay)\n- Yefer amigo bill ( hombre )\n- Luis Mamado amigo bill  ( hombre ) \n- Piero ( hombre )\n- Mario ( hombre ) \n\nMujeres 5\n- Katy ( mujer ) \n- Amiga de Katy  ( mujer ) \n- Nahleyt  # Carlos ( mujer ) \n- Karen Yanarico ( mujer)\n\n\n\nPosible - casi nulo \n- Erika mejora amiga ( mujer ) \n\nReglas \n\nGlenda vetada",
+  },
+  {
+    titulo: "pbi",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "peru cruce\nbase whatsap \npe - NQ2\n\n\n\nperu cruce\npe- nq2\nbase whatsapp \ntabla 1 \ntabla 2",
+  },
+  {
+    titulo: "tareas",
+    categoria: "sentimiento",
+    fecha: "2025",
+    texto: "terminar de hacer lambda para zendesk\nafinar filtros\nterminar tabla de indice contenido",
+  },
+  {
+    titulo: "Es la adrelina que corre por mis venas cuando , …",
+    categoria: "sentimiento",
+    fecha: "2026",
+    texto: "Es la adrelina que corre por mis venas cuando , doy el salto \n\nSoy la morfina en mis malos tiempos , por que aprendi a controlarme \n\nsoy",
+  },
+  {
+    titulo: "No siempre todo es felicidad y alegría",
+    categoria: "sentimiento",
+    fecha: "2026",
+    texto: "No siempre todo es felicidad y alegría\n\nA vezes hay caídas que duelen tan fuerte que no sabemos si será el final de todo \n\nPero que sería la vida sin un poco de emociones fuertes\n\nSería tan simple tan llano tan efímero que no tendría sentido",
+  },
+  {
+    titulo: "Las desiciones importantes requieren , coraje y …",
+    categoria: "sentimiento",
+    fecha: "2026",
+    texto: "Las desiciones importantes requieren , coraje y valentia",
+  },
+  {
+    titulo: "Poder volar y no mirar atras nunca",
+    categoria: "esperanza",
+    fecha: "2020",
+    texto: "Poder volar y no mirar atras nunca\n\nQue tu alma te guie y te lleve lejos , superando los obstaaculos\npero tienes miedo de caerte y no volver a pararte \n\nAlgo doloroso , sentir esa impotencia que te destruye tu cordura con facilidad\nla caida es doloroso , pero sigues intentadolo hasta que las extremidades te sangren y puedas liberar tu alma y llegar a la felicidad",
+  },
+  {
+    titulo: "Me enamora la noche",
+    categoria: "esperanza",
+    fecha: "2021",
+    texto: "Me enamora la noche\nTantas cosas que hice en la noche como ir a una fiesta y jugar hasta la madrugada\nPero todo tiene un final, cuando llega el amanecer todo se acaba\nY todo empieza de nuevo \nCon la llegada del sol sabes que tienes que levantarte y seguir \nEl sol da su cálido calor, sin que se lo pidas\nOdio el día, la tranquilidad se a ido\nEl mundo se mueve de nuevo, empieza la bulla de los tráficos y se apagan las luces de las calles\nTengo que hacer mi desayuno y  entrar a clases\n\nun dia  y noche mas el tiempo nose detiene ni retrocede \nPero me encanta saber \nque como la noche y el dia siempre volveran \ny con ella mis ganas seguir y no rendirme",
+  },
+  {
+    titulo: "Llego a casa de una dia cansado , risas y divers…",
+    categoria: "esperanza",
+    fecha: "2021",
+    texto: "Llego a casa de una dia cansado , risas y diversion \n \nUna cama sin vida , esperando mi llegada .. \nmi gato durmiendo \n\nOdio esas nochesss... \nOdio que pase el tiempo... ya que te extraño cada vez mas \n\nEstoy delirando de tristeza , cuando te recuerdo\nMe duele el alma , mis ojos se empapan y\nMi garganta se agranda \n\nTodavia te siento a mi lado en las noches\nCuando el insonmio me atormenta y la soledad me acompaña\nY mi alegria se a ocultado \nTodavia recuerdo el amor\n\nAmor que te tengo \nAmo esa mirada determinada ,  de tu  valentia de enfrentar la vida, ante los prejuicios de las personas \nAmo tus expreciones perfectas e imperfectas \n\nTe recuerdo y te siento conmigo como si nunca te hubieras ido\n\nSinn darme cuenta amanece .... me toco el  pecho y pienso en ti \nTe extraño\n\nA vezes pienso en botar la toalla , pero lo pienso mucho \nY sale la respuesta que me da la energia de salir \n\nNose que me depare el futuro es muy incierto \n\nEmpieza a salir el sol ... Oh! es hermoso\n\nMi pulmones se llenan de la calida mañana \nMi sonrisa aparece \nMi gato ya me despeino y me pide la comida\n\n\n \nTengo que alistarme.... \n¿Por que?.....\nPor que\nNinguna cosa se hara si solo son palabras\n\nY tengo que maltratar a mis compañeros",
+  },
+  {
+    titulo: "Mis demonios destruyen sus cadenas y empieza la …",
+    categoria: "esperanza",
+    fecha: "2021",
+    texto: "Mis demonios destruyen sus cadenas y empieza la guerra n\nLa matanza comienza por la muerte del sentimiento y la razon\nY acaba con el ultimo demonio , al ser derrotado por mi fe y alegría \nEn e",
+  },
+  {
+    titulo: "Llego a casa de una dia cansado , risas y divers…",
+    categoria: "esperanza",
+    fecha: "2021",
+    texto: "Llego a casa de una dia cansado , risas y diversion \n \nUna cama sin vida , esperando mi llegada .. \nmi gato durmiendo \n\nEstoy delirando de tristesa , cuando te recuerdo\nMe duele el alma , mis ojos se empapan y\nMi garganta se agranda \nAmor que te tengo \nAmo esa mirada determinada ,  de tu  valentia de enfrentar la vida, ante los prefuicios de las personas \nAmo tus expreciones perfectas e imperfectas , besos y abrazos\n\nTodavia te siento a mi lado en las noches\nCuando el insonmio me atormenta y la soledad me acompaña\nY mi alegria se a ocultado \n\nOdio esas nochesss... \nOdio que pase el tiempo... ya que te extraño cada vez mas \n\nSinn darme cuenta amanece .... me toco el  pecho y pienso en ti \nTe extraño\n\nMis manos saben la rutina de cada mañana\n\nEmpieza a salir el sol ... Oh es hermoso\n\nTe recuerdo y te siento conmigo como si nunca te hubieras ido\n\nSiguo en pie ...  Sii .. siguo en pie\nTodavia no\nTodavia no \nTodavia quiero que me veas cumplir mi meta\nMi pulmones se llenan de la calida mañana \nMi sonrisa aparece \nMi gato ya me despeino y me pide la comida",
+  },
+  {
+    titulo: "Me enamora la noche",
+    categoria: "esperanza",
+    fecha: "2021",
+    texto: "Me enamora la noche\nEse silencio y frío donde salen las mejores inspiraciónes \nTantas cosas que hice en la noche como ir a una fiesta, jugar hasta la madrugada y desvelarme por los trabajos y tareas\nPero todo tiene un final, cuando llega el amanecer todo se acaba\nY todo empieza de nuevo \n\nCon la llegada del sol sabes que tienes que levantarte y seguir \nEl sol da su cálido calor, sin que se lo pidas\nTe da alegría sin que digas una palabra \nTe da un viento que calienta tus pulmones \nTe da motivos para seguir adelante \nPero también odio el día, la tranquilidad se a ido\nEl mundo se mueve de nuevo, empieza la bulla de los tráficos y se apagan las luces de las calles",
+  },
+  {
+    titulo: "la empresa de cartas",
+    categoria: "esperanza",
+    fecha: "2021",
+    texto: "Un niño marginado, era repudiado y no muy querido.... Le faltaba talento y tenía muchos defectos\nAmaba a su madre sobre todas las cosas.... Era su inspiración para seguir\nEra grandiosa\n\nNo era pobre ni tan rico\nNo faltaba pan en la mesa pero a vezes se olvidaba de comprar \n\nSu madre no era bella ni muy inteligente \nPero era muy alegre, hacía amigos muy rápidamente y a vezes paraba estresada por el trabajo y le atormentaba mucho al ver a sus compañeros de promoción alegres y felices con buenos trabajos y con una vida estable \n\nConsiguió un trabajo para la municipalidad por un amigo\nEra su primer año y no estaba en planilla \nTenía que organizar su horario para que tenga tiempo en el mercado y la cocina \n\nSiempre andaba con una sonrisa, le encanta a tejer chompás y arreglar camisas \n\nNo le gustaba la suciedad y que la casa esté de cabeza\n\nNo le gustaba los conflictos ni menos las peleas \nNo le gustaba hacer daño a alguien por que no era lo correcto \n\nNo era perfecta\nPero era maravillosa",
+  },
+  {
+    titulo: "La incertidumbre en mis pisadas , no define mi f…",
+    categoria: "esperanza",
+    fecha: "2023",
+    texto: "La incertidumbre en mis pisadas , no define mi fuerza \n\nNo estoy listo para una relación, por que todavia no me siento libre para poder amar a otra persona",
+  },
+  {
+    titulo: "No hay existe la melodia sin sintonia",
+    categoria: "esperanza",
+    fecha: "2023",
+    texto: "No hay existe la melodia sin sintonia\n\nComo el arte sin su creador\n\nEl alma llena de alegria no es mas que un mero sueño que te hizo creer tu imaginacion",
+  },
+  {
+    titulo: "La mañana nos enciende el atardecer nos quema y …",
+    categoria: "esperanza",
+    fecha: "2023",
+    texto: "La mañana nos enciende el atardecer nos quema y la noche nos consume",
+  },
+  {
+    titulo: "Hoja en blanco, la adrenalina corre con fuerza.",
     categoria: "esperanza",
     fecha: "2025",
-    texto: `Te escribo desde el barro, futuro yo,
-para decirte que no me rendí.
-Que cada caída algo me enseñó
-y por eso, hoy lejos, llegaste hasta aquí.`,
+    texto: "Hoja en blanco, la adrenalina corre con fuerza.\nEl temor se aproxima, el enemigo acecha.\nNo hay tregua.\nLa sangre vibra mientras el momento se acerca.\n\nNecesito morfina y dos cigarrillos para calmar el alma.\nEntonces, te miraré de frente,\nmi mirada será temerosa,\npero mi corazón estará estable.\n\nPor un instante, estarás fija en mi mente,\nañoraré el pasado,\npero contigo ya no obtendré mi serotonina.\n\nEl sueño, corrompido en un instante,\ndetendré esta dopamina para pasar la hoja.\nSintonía de arte y expresión contagiante,\ntómame de nuevo, que estoy listo para empezar desde cero.",
   },
   {
-    titulo: "Adiós sin puerta",
+    titulo: "Boxes",
+    categoria: "esperanza",
+    fecha: "2025",
+    texto: "Cantidad de apuestas \n\nLos usuarios libras para productos canjear\nbonos para apuestas\nCambio de color , dependiendo a tu segmento \n\nMenor proporcion se les da Libras\nMayor proporcion se les da Bonos\n\n\n--- IDEAS\n\nHabitos - Comportamiento\nPor que no activas tu cupon ? ,\nPerdida de apuestas\nPersuasivo\n\nCantidad minima de venta , no importa resultado\n\n---- REQUISITOS\n\n\n\n\n---- AREA y SEGMENTOS----\n\n\n\n\n\n\n--- ACTIVADORES --- \n\nDeposito 1000 - CAJITA  , YES\nFalta de libras para producto - CAJITA  , YES \nMonto Acumulado - CAJITA   , YES \nCantidad de tiempo club olimpo - CAJITA\nUsuario pierde dinero - CAJITA\n\n10 Mejores \n\n--- PREMIOS\nTienes una pizza gratis para seguir jugando\nTienes \n\n--- MENSAJES\n\nSigue jugando , sigue apostando",
+  },
+  {
+    titulo: "newwwwwwwwwwwwwww",
+    categoria: "esperanza",
+    fecha: "2025",
+    texto: "El temor se aproxima, el enemigo acecha.\nNo hay tregua, no hay rendición.\nLa sangre vibra, y el momento se acerca.\n\nLa morfina no calma mi tormento, sigo esclavo del afecto.\nNo buscaré el momento, rezaré a la fortuna, me declararé adepto.\nAtento estaré en el campo de batalla, cuando la sangre cese\ny la última bala se libere.\n\nEntonces, te miraré de frente.\nMi mirada será temerosa,\npero mi corazón, firme, estable.\n\nPor un instante, tu recuerdo arderá en mi mente.\nAñoraré el pasado,\npero ya no serás mi serotonina ni dopamina.\n\nEl sueño me ha corrompido en un destello,\ny detendré este viaje con ketamina.\n\nEscribiré de nuevo, una y otra vez,\nmientras estas llamas de ansiedad se consumen.\n\nLlegará el momento,\ncuando la sintonía del arte y la expresión sean contagiosas,\ncuando el miedo retroceda siquiera un 1%.\nAhí, en ese instante que he forjado,\ngritaré: \"¡Hazlo!\"\n\nTómame de nuevo, esta vez con más fuerza,\ncon más coraje, porque estoy listo.\nListo para destruirme y comenzar desde cero.",
+  },
+  {
+    titulo: "¿Qué significa ser un verdadero hombre?",
+    categoria: "esperanza",
+    fecha: "2026",
+    texto: "¿Qué significa ser un verdadero hombre?\n\n\nDicen que biológicamente\n es cromosoma XY,\n hormonas,\n anatomía.\n Una definición limpia.\n Fría.\n Sin cicatrices.\nDicen que socialmente\n es proveedor, protector,\n el que sostiene,\n el que no se dobla.\n Hoy evolucionamos, dicen.\n Hoy validamos la empatía,\n la inteligencia emocional,\n la corresponsabilidad.\nPalabras grandes.\n Palabras bonitas.\nY en psicología\n dicen que es construcción propia,\n identidad,\n valores,\n propósito de vida.\n\nSigo sin respuesta.\nY los años pasan.\nY la pregunta se queda\nclavada aquí,\nen este pecho\nque nadie enseñó a abrir.\n\nCumples dieciocho y ya te llaman hombre. Pero el espejo no entrega lo que el alma no ha ganado.\nY nadie te avisa\nque el nombre no alcanza,\nque la edad no basta,\nque el título llega vacío\ncuando nadie te enseñó\na llenarlo.\n\nBusco en mi interior y recuerdo las palabras de papa\n\n\" Eres un hombre carajo , deja de llorar o el siguiente golpe sera peor \"\n\nEres un hombre. Y los hombres no lloran.\n\nNadie te dice que hay noches , en que te quedas mirando el techo , buscando soluciones que no llegan y la tristeza se disfraza de cansancio porque un hombre no se queja.\n\nQue hay conversaciones que nunca tuviste porque alguien te enseñó que el golpe enseña mejor con una cara ensangretada y un par de moretones en el cuerpo.\n\nY así crecemos........ aprendiendo a sobrevivir antes de aprender a vivir. \nAprendiendo a callar antes de aprender a decir.\n\nYo lo aprendí a las malas , a sentir el metal de mi sangre en los labios. Y lo pagué con creces , por que en mi cabeza ya se tatua la frase el sentir dolor y sufrimiento no es de hombre.\n\nLa cagué tantas veces que ya no sé si camino hacia ese hombre verdadero o si me alejo de él con cada paso que doy.\n\n\n\nNo tengo un padre del que sentirme orgulloso. Cuántas veces lo quise muerto, y cuántas vezes entendí que no tenía sentido — reclamarle a alguien que no entiende lo que siente pecho , lo que me hierve la sangre al ver ese rostro efimero y seco.\n\nLo vi levantar la voz donde debía haber palabras. \nLo vi irse donde debía quedarse. \nLo vi elegirse a él, siempre a él, mientras todo lo demás se caía.\n\nY yo — sin querer — aprendí el mismo idioma. \nLa misma huida. \nEl mismo frío.\n\nNo fui buena pareja. \nNo pude sostener lo que más importaba. \nElla sollosaba de tristeza y yo me quedaba quieto — sin moverme, sin salvarla, sin saber cómo cruzar esa distancia que yo mismo había creado.\n\nOdiaba los ojos apagados , viendo que se desvanece esa luz , que me hacia feliz.\n\nY en los suyos vi algo demasiado familiar, demasiado cercano, algo que me partió por dentro porque ya lo había visto antes.\n\nBusqué en mis memorias — y te encontré a ti, mamá.\n\nJoder , mama , tenia tenia esos mismos ojos destrozandose cuando papa se iba\n\nMama Te vi perder cada día la luz de tu mirada. \nEsa luz que tenías antes, esa que brillaba, esa que papá fue apagando sin darse cuenta ahora yo mismo cometia ese pecado.\n\nTe vi cargar sola toda la carga , lo que papa y mama debían sostener.\n\nMama no quiero mirarme a la cara , por que tengo ese mismo rostro efimero y seco\n\nMama , te vi aguantar en silencio lo que yo, de niño, no sabía cómo nombrar pero sentía aquí , aqui en este corazon , en este mismo pecho donde ahora duele.\n\nY papá  que no quería darse cuenta, o que no quería enfrentarlo.\n\nSiguo con este mismo pensamiento que mrd significa ser un verdadero hombre.\n\n\nAhora entiendo por qué me congelaba. Nadie me enseñó a sostener lo difícil.\nPero eso — eso no me absuelve.\nLa cagué con personas que merecían más de mí. Y eso no tiene excusa — tiene nombre, y es el mío.\n\n\nPorque el hombre verdadero no es el que nunca cayó, es el que cayó, se miró al fondo, y eligió levantarse aunque nadie lo vio.\n\nEl que un día se dijo sin rodeos: esto ya no lo quiero en mi vida. Quiero algo mejor.\n\n\nLa turbulencia de la vida es un caos que nos suceden a todos , muchos de nuetros actos son de manera conciente y inconciente , si importa el resultado y si importa el proceso\n\n\nEl acto sucede por nuetra niñes cuando las experiencia que percibimos , cuestionan nuestro pensamiento interno , indirectamente afecta a nuestra personalidad\n\n\nsiguo con esa pregunta qué significa ser un verdadero hombre. ¿Es el que carga con todo sin doblarse sin cuestionarse? ¿El que protege sin que nadie sin que lo apoye? ¿El que entiende los sentimientos y aprende a sostenerlos sin romperse?\n\nEntonces —\n¿cuándo ocurre , ese paso , del niño al hombre verdadero? \n¿En qué noche turbulenta? \n¿En qué golpe recibido? \n¿En qué perdón explicado?\n\n\nNadie te dice que un hombre también llora en la ducha, con el agua a full, para que nadie escuche los llantos del corazon, para que nadie vea los cantilados de rio que se forman en mi pupilas, para que el dolor se vaya con el agua.\n\n\nTodavía no sé qué es un hombre.\nNo soy juez, ni jurado, ni verdugo. No me siento lleno. No me siento en paz.\nPero sé que el camino correcto no tiene recompensa, no tiene aplausos, no tiene nadie mirando.\nY lo quiero seguir igual.\nPorque me odiaría profundamente si volviera a ver a mamá con esos ojos tristes y vacíos — esos ojos que ya conozco, esos ojos que me enseñaron lo que nunca quiero volver a causar.\n\nEso — quizás — es lo más cercano a un hombre verdadero que he podido ser.\n\n\nDicen que detrás de un verdadero hombre siempre hay una gran mujer.\nMamá — tú eres esa mujer.\n\nLa que aguantó cuando todo se caía. La que siguió siendo luz aunque nadie se la pedia. La que me enseñó, sin saberlo, que hay una forma distinta de estar en el mundo.\nNo la de papá.\n\nY seguiré buscando esa respuesta. \n\nNo para tenerla — sino para romper el círculo.\n\nTodo hombre nace niño, pero no todo niño llega a ser un verdadero hombre.\n\nGracias",
+  },
+  {
+    titulo: "ser hombre",
+    categoria: "esperanza",
+    fecha: "2026",
+    texto: "¿Qué significa ser un verdadero hombre?\n\n\nDicen que biológicamente\n es cromosoma XY,\n hormonas,\n anatomía.\n Una definición limpia.\n Fría.\n Sin cicatrices.\nDicen que socialmente\n es proveedor, protector,\n el que sostiene,\n el que no se dobla.\n Hoy evolucionamos, dicen.\n Hoy validamos la empatía,\n la inteligencia emocional,\n la corresponsabilidad.\nPalabras grandes.\n Palabras bonitas.\nY en psicología\n dicen que es construcción propia,\n identidad,\n valores,\n propósito de vida.\n\nSigo sin respuesta.\nY los años pasan.\nY la pregunta se queda\nclavada aquí,\nen este pecho\nque nadie enseñó a abrir.\n\nCumples dieciocho y ya te llaman hombre. Pero el espejo no entrega lo que el alma no ha ganado.\nY nadie te avisa\nque el nombre no alcanza,\nque la edad no basta,\nque el título llega vacío\ncuando nadie te enseñó\na llenarlo.\n\nBusco en mi interior y recuerdo las palabras de papa\n\n\" Eres un hombre carajo , deja de llorar o el siguiente golpe sera peor \"\n\nEres un hombre. Y los hombres no lloran.\n\nY así aprendí.\n No con palabras.\n Con el metal de mi sangre en los labios.\n Con la cara ensangrentada\n y un par de moretones\n que nadie llamó herida\n porque un hombre no se queja.\nY así crecemos...\n aprendiendo a sobrevivir\n antes de aprender a vivir.\n Aprendiendo a callar\n antes de aprender a decir.\nNadie te dice\n que hay noches\n en que te quedas mirando el techo,\n buscando soluciones que no llegan,\n mientras la tristeza\n se disfraza de cansancio\n porque un hombre no se queja.\nLa cagué tantas veces\n que ya no sé\n si camino hacia ese hombre verdadero\n o si me alejo de él\n con cada paso que doy.\n\n\nNo tengo un padre del que sentirme orgulloso. Cuántas veces lo quise muerto, y cuántas vezes entendí que no tenía sentido — reclamarle a alguien que no entiende lo que sienten las personas, lo que me hierve la sangre al ver ese rostro efimero y seco.\n\nLo vi levantar la voz donde debía haber palabras. \nLo vi irse donde debía quedarse. \nLo vi elegirse a él, siempre a él, mientras todo lo demás se caía.\n\nY yo — sin querer — aprendí el mismo idioma. \nLa misma huida. \nEl mismo frío.\n\nNo fui buena pareja. \nNo pude sostener lo que más importaba. \nElla sollosaba de tristeza y yo me quedaba quieto — sin moverme, sin salvarla, sin saber cómo cruzar esa distancia que yo mismo había creado.\n\nOdiaba los ojos apagados , viendo desvanecer la luz , que me hacia feliz.\n\nY en los suyos vi algo demasiado familiar, demasiado cercano, algo que me partió por dentro porque ya lo había visto antes.\n\nBusqué en mis memorias — y te encontré a ti, mamá.\n\nJoder , mama , tenia tenia esos mismos ojos destrozandose cuando papa se iba\n\nMama Te vi perder cada día la luz de tu mirada. \nEsa luz que tenías antes, esa que brillaba, esa que papá fue apagando sin darse cuenta ahora yo mismo cometia ese pecado.\n\nTe vi cargar sola toda la carga , lo que papa y mama debían sostener.\n\nMama No quiero mirarme a la cara\nporque tengo ese mismo rostro,\nfrío y seco,\nese que juré\nnunca ser.\n\nMama , te vi aguantar en silencio lo que yo, de niño, no sabía cómo nombrar pero sentía aquí , aqui en este corazon , en este mismo pecho donde ahora duele.\n\nY papá  que no quería darse cuenta, o que no quería enfrentarlo.\n\nSiguo con este mismo pensamiento que mrd significa ser un verdadero hombre.\n\n\nAhora entiendo por qué me congelaba. Nadie me enseñó a sostener lo difícil.\nPero eso .....  eso no me absuelve.\nLa cagué con personas que merecían más de mí. Y eso no tiene excusa — tiene nombre, y es el mío.\n\n\nPorque el hombre verdadero no es el que nunca cayó, es el que cayó, se miró al fondo, y eligió levantarse aunque nadie lo vio.\n\nEl que un día se dijo sin rodeos: esto ya no lo quiero en mi vida. Quiero algo mejor.\n\n\nLa turbulencia de la vida es un caos que nos suceden a todos , muchos de nuetros actos son de manera conciente y inconciente , si importa el proceso y el resultado si importa\n\nel romper un corazon , no tiene excusa\n\n\nEl acto sucede por nuetra niñes cuando las experiencia que percibimos , cuestionan nuestro pensamiento interno , indirectamente afecta a nuestra personalidad\n\n\nsiguo con esa pregunta qué significa ser un verdadero hombre. ¿Es el que carga con todo sin doblarse sin cuestionarse? ¿El que protege sin que nadie sin que lo apoye? ¿El que entiende los sentimientos y aprende a sostenerlos sin romperse?\n\nEntonces —\n¿cuándo ocurre , ese paso , del niño al hombre verdadero? \n¿En qué noche turbulenta? \n¿En qué golpe recibido? \n¿En qué perdón explicado?\n\n\nNadie te dice que un hombre también llora en la ducha, con el agua a full, para que nadie escuche los llantos del corazon, para que nadie vea los cantilados de rio que se forman en mi pupilas, para que el dolor se vaya con el agua.\n\n\nTodavía no sé qué es un hombre.\nNo soy juez, ni jurado, ni verdugo. No me siento lleno. No me siento en paz.\nPero sé que el camino correcto no tiene recompensa, no tiene aplausos, no tiene nadie mirando.\nY lo quiero seguir igual.\nPorque me odiaría profundamente si volviera a ver a mamá con esos ojos tristes y vacíos — esos ojos que ya conozco, esos ojos que me enseñaron lo que nunca quiero volver a causar.\n\nEso — quizás — es lo más cercano a un hombre verdadero que he podido ser.\n\n\nDicen que detrás de un verdadero hombre siempre hay una gran mujer.\nMamá — tú eres esa mujer.\n\nLa que aguantó cuando todo se caía. La que siguió siendo luz aunque nadie se la pedia. La que me enseñó, sin saberlo, que hay una forma distinta de estar en el mundo.\nNo la de papá.\n\nY seguiré buscando esa respuesta. \n\nNo para tenerla — sino para romper el círculo.\n\nTodo hombre nace niño, pero no todo niño llega a ser un verdadero hombre.\n\nGracias, mamá.",
+  },
+  {
+    titulo: "Fui a tantas discursos de motivación que ya no m…",
+    categoria: "desamor",
+    fecha: "2021",
+    texto: "Fui a tantas discursos de motivación que ya no me acuerdo \n\nTodos hablando que debemos seguir adelante que no debemos rendirnos, \n\nOh¡  me sentía tan feliz en ese momento ,  pero al dia siguiente  seguia en lo mismo no había cambiado nada … seguía estancado en el hoyo \n\nMis problemas se habían acumulado, me costaba levantarme \n\nya me estaba cansando de todo lo que me pasa\n\nculpaba a todos , perdi mis amistades \n\nNose en que momento perdí el rumbo de la vida \n\nMe odiaba tanto \n\nOdiaba mi cara\n\nOdiaba mi carácter\n\nOdiaba mi forma de vestir \n\nOdiaba mi piel\n\nOdiaba todo\n\nextrañaba ese sentimiento de la felicidad\n\nNo importa a cuantas personas nos hablen de la motivación y que debo disfrutar la vida , por que ninguno \n\nEntiende exactamente lo que estoy pasando , sus métodos de ayuda no funcionan en mi",
+  },
+  {
+    titulo: "El amor se a vuelto tan repetitivo que cualquier…",
+    categoria: "desamor",
+    fecha: "2021",
+    texto: "El amor se a vuelto tan repetitivo que cualquiera puede decir te amo sin sentirlo \nYa no es algo especial ni maravilloso\nLo hemos destruido",
+  },
+  {
+    titulo: "Sonrisa de tristeza por que la alegria se desvan…",
+    categoria: "desamor",
+    fecha: "2021",
+    texto: "Sonrisa de tristeza por que la alegria se desvaneció y mi corazon de apagu\n\nYa no se por que sonrio estoy roto\n\nMis sentimientos sw fueron que bien\nAhora mi razon esta maldita",
+  },
+  {
+    titulo: "Siempre vi a personas hablando de la motivación …",
+    categoria: "desamor",
+    fecha: "2021",
+    texto: "Siempre vi a personas hablando de la motivación y sus historia de vida , pero no siento lo mismo a veces siento que solo son palabras vacías y sin vida , ya no se que hacer \nEstoy estancado en un hoyo \nMi alegría se a ido , mi orgullo está deshecho , mis piernas ya no quieren seguir \nEl pensamiento de rendirme resuena en mi cabeza\nNose cuando fue que perdí el rumbo de mi vida\nPero no me rindo todavía y nose por que no lo hago\nPero aunque mis piernas no quieran seguir , mi corazón sigue y sigue \nSigue con lograr la meta que me propuse y para hacerlo\nprimero debo conocerme",
+  },
+  {
+    titulo: "Mi mitad más amoroso se va",
+    categoria: "desamor",
+    fecha: "2021",
+    texto: "Mi mitad más amoroso se va\n\nMi otra mitad despierta, el sentimiento de la bondad de fue\n\nLa trizteza me convirtió en otra persona, no creo que salga de este infierno\n\nMis pensamientos son más certeros y siniestros\n\nMis tabus ya no importan, nada importa\nY nadie es importante\n\nYa no los veo como antes\n\nLos veo vacíos y sin vida, ahora solo estoy yo solo\nY así quiero quedarmee\n\nYa no quiero la compañía \n\nLa soledad me transformo y ahora no quiero, volver",
+  },
+  {
+    titulo: "Sentimiento de soledad,  mi corazon esta depresi…",
+    categoria: "desamor",
+    fecha: "2022",
+    texto: "Sentimiento de soledad,  mi corazon esta depresivo , mi mente maltrecha y con ganas de ir a cama \n\nYa no quiero estar aqui , no me siento comodo",
+  },
+  {
+    titulo: "Zombilandia",
+    categoria: "desamor",
+    fecha: "2022",
+    texto: "Era un tarde donde se hablo del apocalipsis zombis y la 3era guerra mundial , donde todo era avanzado \nPrimero\nfue mi hermano a la lucha\nDespues yo\ndonde me encontre\ncon otroz zombis\ny mate a alguien para vivir ,despues conoci una ciudad donde era tranquila y hermosa pero carecian de defensas , era como isla no pensaban que vendrian zombis\npero vinieron, donde arrazaron todo habia una presta abandonada , ahi fue donde nos escapamos del desastre , ahi mismo cuando yo estaba solo con mi hermano, puse musica\ny el zombi se calmo , despues sali con musica\ny ellos se tranquilizaron , ya no prestaban atencion\nasi que ese era , la solucion\ndonde propuse eso a los demas sobrevivientes\ny hicimos un concierto , con flechas matamos a todos , hasta que no quede nadie",
+  },
+  {
+    titulo: "El amor duele pero mas duele el haber fallado a …",
     categoria: "desamor",
     fecha: "2023",
-    texto: `Te fuiste sin cerrar, dejaste todo abierto,
-y entra el frío por donde estabas tú.
-Me quedé aprendiendo a vivir en lo incierto,
-a llamar hogar a lo que ya no es luz.
-
-No te guardo rencor, guardo el aprendizaje:
-que amar no es atar, ni rogar, ni morir.
-Hoy desarmo despacio nuestro viejo paisaje
-y me quedo conmigo, que es volver a vivir.`,
+    texto: "El amor duele pero mas duele el haber fallado a una persona que si valia la pena para mi\n\nDuele demasiado, enserio duele, duele el haber tenido todo y por mis inseguridades haberlo perdido\n\nDuele saber que yo fui el culpable , yo fui quien lo arruino \n\nDuele mucho \n\nPero que puedo hacer, ella ya no es parte de mi vida \n\nni yo de ella \n\nNuestros caminos estan separados \n\nMe gustaria volverla a ver\n\nPero me doleria mas\n\nMas me duele el saber que ella nunca comprendio mis sentimientos\n\nElla era chica insegura como yo, ne hubiera gustado conocerla un tiempo despues de mis inseguridades\n\nAsi hubiera funcionado\n\nMe duele mucho pensar en las cosas , pensar demasiado esta demas y me duele mucho mi pecho por yo mismo pensar que habria otra oportunidad\n\nEsque mi corazon es arrogante y quiere todo para el\n\nMi corazon es yo y debo aprender a vivir conmigo mismo, a superar mi depencia emocional",
   },
   {
-    titulo: "Después de ti",
+    titulo: "No te extraño a ti extraño las sensaciones cuand…",
+    categoria: "desamor",
+    fecha: "2023",
+    texto: "No te extraño a ti extraño las sensaciones cuando estabamos \n\nExtraño ese calor en mi pecho \nExtraño que alguien me apoyara \nExtraño no estar solo\nExtraño hablar con alguien",
+  },
+  {
+    titulo: "Si te hablar de sobrio no te responderia nada",
+    categoria: "desamor",
+    fecha: "2023",
+    texto: "Si te hablar de sobrio no te responderia nada\nPrro si estuviera borracho te diria lo mucho que te extraño y que no te olbido todavía",
+  },
+  {
+    titulo: "Pues el alcohol me a dejado sin alegria, pues ni…",
+    categoria: "desamor",
+    fecha: "2023",
+    texto: "Pues el alcohol me a dejado sin alegria, pues ni bien se traslade a mi sangre lo mi cuerpo lo repudia\n\nYa no tengo alegria \n\nPienso que es culpa o tal sea mia, ya no tendre mas compañía del brebaje que hacia encaje en mi soledad",
+  },
+  {
+    titulo: "Leistes el mensaje",
+    categoria: "desamor",
+    fecha: "2023",
+    texto: "Leistes el mensaje \n\nSabes no quiero que lo veas como debilidad el pedir ayuda\nO que por que nuestra historia que acabo mal, tenga algo que ver \n\nYa no soy el mismo, soy un poco mejor cada dia, eh opacado muchas de mis inseguridades y problemas en mi\n\nSolo ten en cuenta que te apoyare si me necesitas.\n\nMas",
+  },
+  {
+    titulo: "Te extraño y esta mal , por que el destructor no…",
+    categoria: "desamor",
+    fecha: "2023",
+    texto: "Te extraño y esta mal , por que el destructor no puede crear",
+  },
+  {
+    titulo: "Para ya no perder a nadie mas",
+    categoria: "desamor",
+    fecha: "2023",
+    texto: "Eh tenido muchas inseguridades en mi mismo, tanto en mi que eh perdido a personas importantes en mi vida\n\nYa no quiero perderlas ya no\n\nSe que demorara un tiempo hasta que me recupere\n\nSolucionar mi ansiedad\n\nSolucionar mi dependencia emocional \n\nSolucionar mis inseguridades \n\nEstar mejor conmigo mismo\n\nPero mas que nada, de perder personas \n\nQuiero que esas bolitas ya no tengan que explotar.",
+  },
+  {
+    titulo: "Me gusta estar solo ahora , se que perdi cosas y…",
     categoria: "desamor",
     fecha: "2024",
-    texto: `Dolió como duele lo que de verdad amé,
-pero hasta del dolor se vuelve a florecer.
-Hoy camino sin ti y no me caigo: sé
-que perderte fue, al fin, volverme a tener.`,
+    texto: "Me gusta estar solo ahora , se que perdi cosas y personas\npero no me disgusta ahora mismo , por que me amo un poco mas a mi mismo \nSe que hize todo lo que pude para no perderlos , pero me elegi a mi mismo para no perderme despues \nAhora ando tranquilo sin molestias ni errores , ando mejor cada dia \nSe que decia que terminaba y seguia con otra cosa\nSe que me falta mucho para llegar a ser la persona que quiero , pero me siento mejor por que lo estoy haciendo no perfecto no de la forma que queria\npero al menos lo hago \nEs lo que hace que mi corazon sigua y es la razon por que la no me rindo todavia\nSe que perdere tal vez mas personas , tal vez pierda mas de lo debido \nPero ahora ya no sera lo mismo ahora sere algo mejor de mi mismo una mejor version\nPor que ahora lo tengo claro , las metas , lo que debo hacer y como lo debo hacer\n\nEl amor que quisiera compartir con alguien ya no es prioridad , ahora mi prioridad es yo solo amarme \n\nQuiero amarme tanto que no me arrepienta de mis pasos , ni menos de acciones\n\nAlgo que yo debo hacer y quiero hacerlo de corazon",
+  },
+  {
+    titulo: "Razones por las cuales debo seguir adelante",
+    categoria: "desamor",
+    fecha: "2024",
+    texto: "Por que el pasado , solo es eso pasado\n\nPara una mejor version de mi\n\nPor que quiero estar bien conmigo mismo\n\nPor que quiero cumplir mis metas \n\nPor que ya no quiero volver al mismo hoyo de siempre\n\nPara ver feliz a mi madre \n\nPara ya no cometer mas errores\n\nPara eliminar mis inseguridades\n\nPara mirarme al espejo y que me guste lo que vea\n\nPor mi familia\n\nPor mi\n\nPara no perder a nadie mas",
+  },
+  {
+    titulo: "El musculo no responde , el alma ah callado",
+    categoria: "desamor",
+    fecha: "2025",
+    texto: "El musculo no responde , el alma ah callado \n\nEl pensamiento a muerto \n\nmis latidos ya no suenan en la misma tonada\nmi agonia de sombra se ah fracturado \n\nNo quiero recordar ese momento \n\n\nel ocaso a llegado \nMi refugio se a incendiado\n\nAunque todo pese tu recuerdo me aqueja en cada latida\nla inmensidad esta en su apogeo \n\n\n\n\n\nYa no degustas el sabor de la vida \n\nya no imploras el perdon de dios\n\ny \n\n\n\nRenunciare a mi viguila y mi religion\n\nRenunciare mi ser y mi alma\n\nmi melancolia de tristeza mi agonia de sombra\n\nmi  ocaso sera mi refugio \n\n\nQue mi furia contenida no perturbe mi alma\n\nque no corrompa que no malgaste y que no \n\nme mate\n\n\nSoy tan egoista que nunca devolvi las llamadas\nsoy tan egoista que preferistes tu orgullo a una respuesta",
+  },
+  {
+    titulo: "Añoro tus detalles",
+    categoria: "desamor",
+    fecha: "2026",
+    texto: "Cada poesía que te escribo no nace del amor, porque el amor es pasajero y ambiguo, ya no significa nada en esta época de mentirosos y mendigos.\n\nEscribo para maldecirme, para herirme con pensamientos de ese “tal vez” en mi corazón que nunca sucederá.\n\n Me destrozo en palabras,\n y a veces suelto improperios entre los dientes.\nNecesito desarmarme,\n romperme en pedazos,\n para al menos sentir lo que tú sentiste por mí.\n\nAún añoro tu rostro,\n ese hoyuelo que aparecía a dos pulgadas de tu labio izquierdo,\n ese lunar junto a tu oreja,\n la fragancia de amapolas en tu ropa,\n tus pequeños gestos desafiantes.\n\nExtraño tu coraje frente al miedo de los perros,\n cómo fingías ser fuerte\n para que no te devoraran con la mirada.\n\nTe reconocería en cualquier parte,\n pero ahora sé que eres otra,\n una extraña con tus recuerdos y tu mismo rostro.\n La persona que amé solo existe\n en mis pensamientos intrusivos.",
+  },
+  {
+    titulo: "Toxica 2",
+    categoria: "desamor",
+    fecha: "2026",
+    texto: "mayoría de las historias\ncomienzan con el protagonista.\nLa mía empezó el día\nque aprendí a escuchar mi corazón —\nel día que entendí\nque mis pulsaciones ya no me pertenecían,\nporque ya no latían por mí.\nLatían por vos.\nEs extraño que algo de mí\name todo de ti.\nParece brujería antigua.\nO mejor dicho —\namor a la antigua.\n¿Por qué esta necesidad\nde pensar en alguien\nsabiendo que todo termina?\nTal vez llegue la muerte primero,\ntal vez me dejes tú,\ntal vez sea yo quien se vaya.\nAlgo burdo.\nPatético, la verdad.\nDicen que lo importante está adentro —\npero tu sangre no es compatible con la mía.\nTú eres O negativo.\nYo solo A positivo.\nNi tus órganos me servirían,\nni los míos a los tuyos.\nY aun así\nme gusta hablar contigo.\nSe siente bien.\nComo esperar el amanecer\ny sentir los primeros rastros de luz\ntocando la piel —\nese calor suave,\nese primer sol sobre los párpados cerrados,\nabriéndose sin prisa.\nTe miro\ny la misma luz que apenas roza el mundo\ntambién te roza a ti,\ny el cuerpo se suelta sin darse cuenta.\nTu rostro resplandece\ncon un tono que parece venir de adentro.\nY ahí —\nmirándote —\nesto es alegría encontrada.\nNo fuiste mi primer beso,\npero añoro tus labios.\nNo fuiste mi primer amor,\npero deseo que no seas el último.\nPero algo está mal.\nAlgo no se siente bien.\nAlgo siempre estuvo roto.\nSí —\nparece cursi.\nComo si estuviera soñando\nalgo hermoso.\nY es que, en realidad,\nsí lo estoy.\nAl final no era amor.\nNo era química.\nSolo queríamos sentir un poco de calor\ndespués de tanto frío.\nEra desesperación.\nEra un apego hecho de sufrimiento —\ndos personas rotas\nintentando repararse la una a la otra.\n¿Cómo amar a alguien\nsi no somos capaces\nde amarnos a nosotros mismos?\nLo más extraño de todo:\nel cigarrillo ya no calmaba mi ansiedad,\nporque los motivos habían cambiado.\nEl sabor del vino\nya no era el mismo.\n¿Cómo llegamos hasta acá?\n¿Cómo sucedió esto?\n¿Por qué nos sentimos así?\nEste sabor se volvió amargo.\nEstamos intoxicados.\nApago el cigarrillo.\nY de la garganta me entumece algo\nque ya no cabe en palabras.\nTe extraño.\nLo confieso.\nPero a eso quedarás reducida —\na un pensamiento inoportuno.\nYa no haré intentos.\nMe acostumbraré a mis lamentos.\nMe haré juramentos en la carne.\nRomperé las fotos sin aliento.\nNuestra fiesta ya pertenece al pasado.\nLos pasos se dieron.\nNo hay más que hacer.\nPero tu sonrisa sigue clavada en mi piel\ncomo un eco que no sé perder.\nEstoy cargado de la impotencia que me dejaste —\nperdido,\ndesamparado,\nhuérfano de un amor ya terminado.\nLo añoro y a la vez lo odio.\nCuento cada segundo.\nA veces lo insulto.\nPronuncio improperios contra el aire\nporque en la garganta\nya no me aguantan.\nQuiero salir de este lugar.\nQuiero que alguien me devuelva la luz,\nporque ando perdido\nen la sombra de tu sonrisa.\nAlto.\nBasta.\nTengo que soltar tu nombre,\nsoltar la foto,\nsoltar el humo.\nRespiro una vez.\nDos.\nTres que me ahogan.\nCuatro que son por vos.\nCinco que aprietan el corazón hacia atrás.\nMaldición.\n¿Desde cuándo mi pecho tiembla tan rápido?\nLas manos no son mías.\nEl aire viene pálido.\nSeis golpea el vidrio.\nSiete suena a cálido.\nOcho es un susurro.\nNueve es un relámpago.\nDiez...\nDiez se queda sin par.\nNo encuentra eco.\nQuieto.\nQuieto.\nLos dedos vuelven a ser dedos.\nEl pecho afloja —\nsolo un poco.\nEl aire ya no pelea por entrar.\nRespiro.\nSin contar.\nY la razón regresa\ncomo un huésped callado,\nse sienta a mi lado sin pedir permiso,\nno dice nada,\nporque ya no hace falta.\nTú no volverás a mí.\nY yo —\npor fin —\ntampoco volveré a ti.",
   },
 ];
