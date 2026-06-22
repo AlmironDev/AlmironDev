@@ -73,10 +73,7 @@ pasaron 3 horas , mi madre llega
 se va a su cuarto solo a domir
 
 dentro de otras 2 horas llegua mi padre
-y se sale de nuevo",
-  },
-
-  {
+y se sale de nuevo
 `,
   },
   {
@@ -202,10 +199,7 @@ Aquí estaré.
  Como siempre, molestándote.
  Pero con los ojos abiertos esta vez.
 Contigo.
- Siempre contigo.",
-  },
-
-  {
+ Siempre contigo.
 `,
   },
   {
@@ -244,10 +238,7 @@ gritaré: "¡Hazlo!"
 
 Tómame de nuevo, esta vez con más fuerza,
 con más coraje, porque estoy listo.
-Listo para destruirme y comenzar desde cero.",
-  },
-
-  {
+Listo para destruirme y comenzar desde cero.
 `,
   },
   {
@@ -409,10 +400,7 @@ No para tenerla — sino para romper el círculo.
 
 Todo hombre nace niño, pero no todo niño llega a ser un verdadero hombre.
 
-Gracias, mamá.",
-  },
-
-  {
+Gracias, mamá.
 `,
   },
   {
@@ -566,9 +554,7 @@ porque ya no hace falta.
 Tú no volverás a mí.
 Y yo —
 por fin —
-tampoco volveré a ti.",
-  },
-    {
+tampoco volveré a ti.
 `,
   },
   {
@@ -597,8 +583,7 @@ Estoy desesperado, como nunca. Desahuciado. Molesto con todos, conmigo especialm
 Quisiera que al menos lo que hago tenga sentido.
 Estoy desahuciado en una ciudad importante, con todos sus motores.
 
-y yo solo quiero volver a esos momentos"},
-  {
+y yo solo quiero volver a esos momentos
 `,
   },
   {
@@ -636,9 +621,6 @@ Perceptivo a lo profundo, me inundo en este mundo, estoy como un moribundo mendi
 Mendigo entre mendigos, mintiéndome despierto, buscando en el espejo un rostro que no acierto
 
 Ese rostro no existe y solo estare en mi recuerdos pensando en ti
-
-"},
-  {
 `,
   },
   {
@@ -672,7 +654,7 @@ Empieza de nuevo: vamos 1 — y estás hasta el pedo, 2 — y estás alzando la 
 
 -----
 
-Puedo decirte mis improperios, pero entiende: no soy tu enemigo. Tu enemigo está a la 1 de la madrugada, en tu subconsciente — ese que no entiendes, el que te encuentra destrozado y suelta a tus demonios."},  {
+Puedo decirte mis improperios, pero entiende: no soy tu enemigo. Tu enemigo está a la 1 de la madrugada, en tu subconsciente — ese que no entiendes, el que te encuentra destrozado y suelta a tus demonios.
 `,
   },
   {
