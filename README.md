@@ -35,6 +35,9 @@
   <a href="https://almironbilldev.pages.dev/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white" />
   </a>
+  <a href="https://almirondev.github.io/AlmironDev/poesia/" target="_blank">
+    <img src="https://img.shields.io/badge/Poesía-9C27B0?style=for-the-badge&logo=bookstack&logoColor=white" />
+  </a>
 </div>
 <br/>
 
